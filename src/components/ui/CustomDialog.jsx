@@ -60,7 +60,7 @@ export default function CustomDialog({
         <div className="px-6 sm:px-8 pt-5 pb-4 border-b border-slate-100 flex items-start justify-between bg-slate-50/60 rounded-t-3xl">
           <div>
             {title && (
-              <h3 id="dialog-title" className="font-sans text-xl font-bold text-slate-900">
+              <h3 id="dialog-title" className="font-display text-xl font-bold text-slate-900">
                 {title}
               </h3>
             )}

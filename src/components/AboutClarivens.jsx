@@ -1,44 +1,78 @@
 import React from 'react';
-import { ShieldCheck, Target, HeartHandshake, Compass, CheckCircle2 } from 'lucide-react';
+import { Target, Users, Award, ShieldCheck, CheckCircle2 } from 'lucide-react';
 import { siteData } from '../data/siteData';
 import ScrollReveal from './common/ScrollReveal';
+
+import logoMarkImg from '../assets/logo-mark.png';
 
 export default function AboutClarivens() {
   return (
     <section 
       id="about" 
-      className="py-24 bg-white border-b border-surface-border relative overflow-hidden"
+      className="py-14 sm:py-16 lg:py-20 bg-white border-b border-slate-200/80 relative overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="site-container">
         
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
-          {/* Left Column: Visual Brand Core Engineering Graphic */}
+          {/* Left Column: Agency Engineering Card */}
           <ScrollReveal direction="up" delay={100} className="lg:col-span-5 flex justify-center">
-            <div className="relative w-full max-w-md aspect-square bg-[#f8faf9] rounded-3xl border border-slate-200/90 p-8 flex items-center justify-center overflow-hidden shadow-sm">
+            <div className="relative w-full max-w-lg bg-gradient-to-br from-slate-50 via-white to-emerald-50/30 rounded-3xl border border-slate-200/90 p-8 shadow-xs">
               
-              {/* Concentric Architectural Framing */}
-              <div className="absolute inset-8 border border-slate-200 rounded-2xl pointer-events-none"></div>
-              <div className="absolute inset-16 border border-slate-200/60 rounded-xl pointer-events-none"></div>
-              
-              {/* Crosshair Lines */}
-              <div className="absolute left-0 right-0 top-1/2 h-px bg-slate-200/80"></div>
-              <div className="absolute top-0 bottom-0 left-1/2 w-px bg-slate-200/80"></div>
-
-              {/* Corner Coordinates */}
-              <span className="absolute top-4 left-4 font-mono text-[9px] text-slate-400">CORE // LATENCY_ZERO</span>
-              <span className="absolute top-4 right-4 font-mono text-[9px] text-slate-400">ENGINE // V2.4</span>
-              <span className="absolute bottom-4 left-4 font-mono text-[9px] text-slate-400">SECURITY // STRICT</span>
-              <span className="absolute bottom-4 right-4 font-mono text-[9px] text-brand-600 font-bold">STATUS // OPTIMAL</span>
-
-              {/* Central Branded Node */}
-              <div className="relative z-10 w-28 h-28 rounded-2xl bg-petrol-900 border-2 border-brand-500/30 flex flex-col items-center justify-center text-white shadow-2xl group hover:scale-105 transition-transform">
-                <span className="text-4xl font-extrabold text-brand-400 font-sans">
-                  C
+              {/* Brand Header */}
+              <div className="flex items-center justify-between pb-6 border-b border-slate-100">
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-xl bg-white border border-slate-200/80 flex items-center justify-center p-1 shadow-xs">
+                    <img src={logoMarkImg} alt="Clarivens Logo" className="w-10 h-10 object-contain" />
+                  </div>
+                  <div>
+                    <h4 className="font-heading font-bold text-base text-slate-900">CLARIVENS</h4>
+                    <p className="text-xs font-semibold text-brand-700">Custom Software & Systems Agency</p>
+                  </div>
+                </div>
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200">
+                  <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
+                  Direct Access
                 </span>
-                <span className="font-mono text-[8px] font-bold text-slate-300 tracking-widest mt-1">
-                  CLARIVENS
-                </span>
+              </div>
+
+              {/* Agency Principles */}
+              <div className="py-6 space-y-3.5">
+                <div className="flex items-start gap-3.5 p-3.5 rounded-xl bg-white border border-slate-100 shadow-2xs">
+                  <div className="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center flex-shrink-0">
+                    <Target className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <div className="font-display text-xs font-bold text-slate-900">Purpose-Built Architecture</div>
+                    <div className="text-[11px] text-slate-500 mt-0.5">Custom schemas and responsive UIs built for your team's specific daily procedures.</div>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3.5 p-3.5 rounded-xl bg-white border border-slate-100 shadow-2xs">
+                  <div className="w-8 h-8 rounded-lg bg-petrol-50 text-petrol-800 flex items-center justify-center flex-shrink-0">
+                    <Users className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <div className="font-display text-xs font-bold text-slate-900">Operator-Centered UX</div>
+                    <div className="text-[11px] text-slate-500 mt-0.5">Ergonomic workflows that reduce onboarding time and operator training overhead.</div>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3.5 p-3.5 rounded-xl bg-white border border-slate-100 shadow-2xs">
+                  <div className="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-700 flex items-center justify-center flex-shrink-0">
+                    <Award className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <div className="font-display text-xs font-bold text-slate-900">Complete Code Sovereignty</div>
+                    <div className="text-[11px] text-slate-500 mt-0.5">100% intellectual property rights, repository access, and deployment ownership.</div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Bottom Assurance */}
+              <div className="pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 font-medium">
+                <span>Production Standards</span>
+                <span className="text-brand-700 font-bold">Documented Handover</span>
               </div>
 
             </div>
@@ -47,13 +81,13 @@ export default function AboutClarivens() {
           {/* Right Column: Narrative, Mission & Principles */}
           <ScrollReveal direction="up" delay={200} className="lg:col-span-7 text-left space-y-8">
             
-            <div className="space-y-4">
-              <div className="font-mono text-xs font-bold tracking-widest text-brand-700 uppercase">
+            <div className="space-y-3">
+              <div className="text-xs font-bold tracking-wider text-brand-700 uppercase">
                 {siteData.about.eyebrow}
               </div>
-              <h2 className="font-sans text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">
-                TECHNOLOGY WITH <br />
-                <span className="text-brand-600">A PRACTICAL PURPOSE.</span>
+              <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">
+                ENGINEERING SOFTWARE <br />
+                <span className="text-brand-600">FOR COMPLEX OPERATIONS.</span>
               </h2>
               <p className="text-slate-600 text-base sm:text-lg leading-relaxed pt-2">
                 {siteData.about.copy}
@@ -61,10 +95,10 @@ export default function AboutClarivens() {
             </div>
 
             {/* Core Operational Principles */}
-            <div className="space-y-3.5 pt-2">
+            <div className="space-y-3.5 pt-1">
               {siteData.about.principles.map((p) => (
-                <div key={p.title} className="p-4 rounded-xl border border-slate-200/80 bg-slate-50/50 hover:bg-slate-50 transition-colors">
-                  <div className="font-sans text-sm font-bold text-slate-900 mb-1 flex items-center gap-2">
+                <div key={p.title} className="p-4 rounded-xl border border-slate-200/80 bg-slate-50/60 hover:bg-slate-50 transition-colors">
+                  <div className="font-display text-sm font-bold text-slate-900 mb-1 flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-brand-600 flex-shrink-0" />
                     <span>{p.title}</span>
                   </div>
@@ -79,10 +113,10 @@ export default function AboutClarivens() {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4 border-t border-slate-200">
               {siteData.about.stats.map((stat) => (
                 <div key={stat.label}>
-                  <div className="font-mono text-2xl font-extrabold text-petrol-900">
+                  <div className="font-display text-2xl font-extrabold text-petrol-900">
                     {stat.value}
                   </div>
-                  <div className="text-[11px] font-mono text-slate-500 mt-0.5">
+                  <div className="text-xs font-medium text-slate-500 mt-1">
                     {stat.label}
                   </div>
                 </div>

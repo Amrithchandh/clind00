@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Layers, CheckCircle2, ArrowRight, ShieldCheck, Clock, Users } from 'lucide-react';
 import { siteData } from '../data/siteData';
 import ScrollReveal from './common/ScrollReveal';
 
@@ -9,25 +8,29 @@ export default function EngagementModel() {
   return (
     <section 
       id="how-we-work" 
-      className="py-24 bg-petrol-900 text-white relative overflow-hidden border-b border-petrol-800"
+      className="py-14 sm:py-16 lg:py-20 bg-[#0d2226] text-white relative overflow-hidden border-b border-petrol-800"
     >
-      <div className="absolute inset-0 bg-tech-grid-dark opacity-30 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-tech-grid-dark opacity-20 pointer-events-none"></div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative site-container">
         
-        {/* Section Header */}
+        {/* Section Header: Proportional 12-Column Grid */}
         <ScrollReveal direction="up" delay={0}>
-          <div className="max-w-3xl mb-16 space-y-4 text-left">
-            <div className="font-mono text-xs font-bold tracking-widest text-brand-400 uppercase">
-              {siteData.howWeWork.eyebrow}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-end mb-8 sm:mb-10 text-left">
+            <div className="lg:col-span-7 space-y-3">
+              <div className="text-xs font-bold tracking-wider text-brand-400 uppercase">
+                {siteData.howWeWork.eyebrow}
+              </div>
+              <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-[1.1]">
+                A STRUCTURED ROADMAP FROM <br className="hidden sm:inline" />
+                <span className="text-brand-400">DISCOVERY TO HANDOVER.</span>
+              </h2>
             </div>
-            <h2 className="font-sans text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
-              A CLEAR, PRACTICAL ENGAGEMENT <br className="hidden sm:block" />
-              <span className="text-brand-400">FROM CONTEXT TO CONTINUITY.</span>
-            </h2>
-            <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-              Predictable outcomes require structured methodology. We walk alongside your leadership from day one to post-deployment continuity.
-            </p>
+            <div className="lg:col-span-5">
+              <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+                Predictable systems delivery requires disciplined engineering. We manage the entire lifecycle from requirements discovery and database architecture to production launch and team enablement.
+              </p>
+            </div>
           </div>
         </ScrollReveal>
 
@@ -49,13 +52,13 @@ export default function EngagementModel() {
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="font-mono text-xs font-bold text-brand-400 uppercase tracking-wider">
-                      {phase.title}
+                    <span className="font-display text-xs font-bold text-brand-400 uppercase tracking-wider">
+                      Stage 0{idx + 1}
                     </span>
                     <span className="w-2 h-2 rounded-full bg-brand-500"></span>
                   </div>
 
-                  <h3 className="font-sans text-xl font-bold text-white mb-2">
+                  <h3 className="font-display text-xl font-bold text-white mb-2">
                     {phase.title}
                   </h3>
 
@@ -65,11 +68,11 @@ export default function EngagementModel() {
                 </div>
 
                 <div className="pt-4 border-t border-petrol-800 space-y-2">
-                  <div className="font-mono text-[10px] text-slate-400 uppercase">
-                    Deliverables:
+                  <div className="text-xs font-semibold text-slate-400 uppercase tracking-wider">
+                    Key Deliverables:
                   </div>
                   {phase.deliverables.map((d) => (
-                    <div key={d} className="flex items-center gap-1.5 text-xs text-brand-200">
+                    <div key={d} className="flex items-center gap-2 text-xs text-brand-200">
                       <span className="text-brand-400 font-bold">•</span>
                       <span>{d}</span>
                     </div>
@@ -83,12 +86,12 @@ export default function EngagementModel() {
 
         {/* Accountability Banner */}
         <ScrollReveal direction="up" delay={250}>
-          <div className="p-5 rounded-xl bg-petrol-800/50 border border-petrol-700/60 flex flex-wrap items-center justify-between gap-4 text-xs font-mono text-slate-300">
+          <div className="p-5 rounded-xl bg-petrol-800/50 border border-petrol-700/60 flex flex-wrap items-center justify-between gap-4 text-xs text-slate-300 font-medium">
             <div className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              <span>TRANSPARENT SPRINT REVIEWS & DEMOS EVERY 2 WEEKS</span>
+              <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
+              <span>Transparent sprint reviews and progress demos every two weeks</span>
             </div>
-            <span className="text-brand-300 font-semibold">100% INTELLECTUAL PROPERTY TRANSFERRED</span>
+            <span className="text-brand-300 font-bold">100% Intellectual Property Transferred</span>
           </div>
         </ScrollReveal>
 

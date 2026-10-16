@@ -18,11 +18,11 @@ export default function CustomButton({
   className = '',
   ...props
 }) {
-  const baseStyles = "relative inline-flex items-center justify-center font-sans font-semibold transition-all duration-200 focus:outline-none select-none active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none disabled:active:scale-100";
+  const baseStyles = "relative inline-flex items-center justify-center font-display font-semibold transition-all duration-200 focus:outline-none select-none active:scale-[0.98] disabled:opacity-50 disabled:pointer-events-none disabled:active:scale-100";
 
   const sizeStyles = {
     sm: "text-xs px-3.5 py-1.5 rounded-lg gap-1.5",
-    md: "text-xs font-bold font-mono tracking-wider uppercase px-5 py-2.5 rounded-xl gap-2",
+    md: "text-xs font-bold font-sans tracking-wide px-5 py-2.5 rounded-xl gap-2",
     lg: "text-sm font-semibold px-7 py-3.5 rounded-xl gap-2.5 shadow-md",
   };
 

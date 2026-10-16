@@ -23,23 +23,25 @@ export default function Footer({ onOpenContact }) {
   };
 
   return (
-    <footer className="bg-petrol-950 text-white border-t border-petrol-900 relative overflow-hidden">
+    <footer className="bg-[#0c1a1d] text-white border-t border-petrol-900 relative overflow-hidden">
       {/* Background Architectural Grid */}
-      <div className="absolute inset-0 bg-tech-grid-dark opacity-20 pointer-events-none"></div>
+      <div className="absolute inset-0 bg-tech-grid-dark opacity-15 pointer-events-none"></div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
+      <div className="relative site-container pt-12 pb-8">
         
         {/* Upper Footer: Brand & Mission */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-petrol-800/80 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 pb-8 border-b border-petrol-800/80 items-start">
           
           <div className="md:col-span-6 space-y-4 text-left">
             <div className="flex items-center gap-3">
-              <LogoMark className="w-8 h-8" />
+              <div className="w-10 h-10 rounded-xl bg-white p-1 flex items-center justify-center shadow-xs">
+                <LogoMark className="w-8 h-8" />
+              </div>
               <div>
-                <span className="font-sans font-extrabold text-lg tracking-wider text-white">
+                <span className="font-heading font-extrabold text-lg tracking-tight text-white">
                   {siteData.brand.name}
                 </span>
-                <span className="block font-mono text-[9px] font-semibold tracking-[0.25em] text-brand-400 uppercase -mt-0.5">
+                <span className="block font-sans text-[10px] font-bold tracking-[0.2em] text-brand-400 uppercase -mt-0.5">
                   {siteData.brand.subtitle}
                 </span>
               </div>
@@ -52,11 +54,11 @@ export default function Footer({ onOpenContact }) {
 
           <div className="md:col-span-6 flex flex-col sm:flex-row sm:items-center sm:justify-end gap-4 text-left sm:text-right">
             <div>
-              <div className="text-xs font-mono text-slate-400 uppercase">
-                ENGINEERING HEADQUARTERS
+              <div className="font-display text-xs font-bold text-slate-400 uppercase tracking-wider">
+                Engineering Delivery
               </div>
-              <div className="text-sm font-sans text-slate-200 mt-1">
-                Global Delivery & Implementation
+              <div className="text-sm font-sans text-slate-200 mt-0.5">
+                Global Implementation & Support
               </div>
             </div>
             <button
@@ -74,10 +76,10 @@ export default function Footer({ onOpenContact }) {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-12 border-b border-petrol-800/80 text-left">
           
           <div>
-            <div className="font-mono text-[11px] font-bold tracking-widest text-brand-400 uppercase mb-4">
-              NAVIGATE
+            <div className="font-display text-xs font-bold tracking-wider text-brand-400 uppercase mb-4">
+              Navigation
             </div>
-            <ul className="space-y-2.5 text-xs font-mono text-slate-400">
+            <ul className="space-y-2.5 text-xs text-slate-400 font-medium">
               {siteData.navLinks.map((link) => (
                 <li key={link.label}>
                   <a href={link.href} className="hover:text-white transition-colors">
@@ -89,18 +91,18 @@ export default function Footer({ onOpenContact }) {
           </div>
 
           <div>
-            <div className="font-mono text-[11px] font-bold tracking-widest text-brand-400 uppercase mb-4">
-              SOLUTIONS
+            <div className="font-display text-xs font-bold tracking-wider text-brand-400 uppercase mb-4">
+              Solutions & Case Studies
             </div>
-            <ul className="space-y-2.5 text-xs font-mono text-slate-400">
+            <ul className="space-y-2.5 text-xs text-slate-400 font-medium">
               <li>
                 <a href="#attendance-solution" className="hover:text-white transition-colors">
-                  Attendance & Roll Call
+                  Staff Operations Portal
                 </a>
               </li>
               <li>
                 <a href="#sectors" className="hover:text-white transition-colors">
-                  Institutional Portals
+                  Educational Institution Suite
                 </a>
               </li>
               <li>
@@ -117,23 +119,23 @@ export default function Footer({ onOpenContact }) {
           </div>
 
           <div>
-            <div className="font-mono text-[11px] font-bold tracking-widest text-brand-400 uppercase mb-4">
-              CAPABILITIES
+            <div className="font-display text-xs font-bold tracking-wider text-brand-400 uppercase mb-4">
+              Capabilities
             </div>
-            <ul className="space-y-2.5 text-xs font-mono text-slate-400">
+            <ul className="space-y-2.5 text-xs text-slate-400 font-medium">
               <li>
                 <a href="#services" className="hover:text-white transition-colors">
-                  Custom Software
+                  Custom Web Applications
                 </a>
               </li>
               <li>
                 <a href="#services" className="hover:text-white transition-colors">
-                  Process Automation
+                  Internal Tools & Portals
                 </a>
               </li>
               <li>
                 <a href="#services" className="hover:text-white transition-colors">
-                  UI/UX Architecture
+                  System & ERP Integrations
                 </a>
               </li>
               <li>
@@ -145,10 +147,10 @@ export default function Footer({ onOpenContact }) {
           </div>
 
           <div>
-            <div className="font-mono text-[11px] font-bold tracking-widest text-brand-400 uppercase mb-4">
-              CONNECT
+            <div className="font-display text-xs font-bold tracking-wider text-brand-400 uppercase mb-4">
+              Connect
             </div>
-            <ul className="space-y-2.5 text-xs font-mono text-slate-400">
+            <ul className="space-y-2.5 text-xs text-slate-400 font-medium">
               <li>
                 <a 
                   href="https://www.linkedin.com/company/clarivens-it-solutions/" 
@@ -187,16 +189,16 @@ export default function Footer({ onOpenContact }) {
         </div>
 
         {/* Lower Footer: Copyright & Metadata */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-500">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 font-medium">
           <div>
-            © 2026 {siteData.brand.name} {siteData.brand.subtitle}. ALL RIGHTS RESERVED.
+            © 2026 {siteData.brand.name} {siteData.brand.subtitle}. All rights reserved.
           </div>
           <div className="flex items-center gap-3">
-            <span className="text-slate-400 uppercase font-semibold">
-              {siteData.brand.descriptor}
+            <span className="text-slate-400 font-semibold">
+              Custom Software & Digital Systems Agency
             </span>
             <span>•</span>
-            <span className="text-brand-400">PRACTICAL TECHNOLOGY IMPLEMENTATION</span>
+            <span className="text-brand-400 font-semibold">100% Client Source Code Ownership</span>
           </div>
         </div>
 

@@ -34,16 +34,17 @@ export default {
           DEFAULT: '#082226'
         },
         surface: {
-          light: '#f7faf8',
+          light: '#f8fafc',
           card: '#ffffff',
-          muted: '#eef3f0',
-          border: '#dbe4e0',
-          darkBorder: '#12383f'
+          muted: '#f1f5f9',
+          border: '#e2e8f0',
+          darkBorder: '#1e293b'
         }
       },
       fontFamily: {
-        sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
-        mono: ['"JetBrains Mono"', 'monospace'],
+        sans: ['"Satoshi"', '"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+        heading: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+        display: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
       },
       letterSpacing: {
         tighter: '-0.04em',

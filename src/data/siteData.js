@@ -2,301 +2,293 @@ export const siteData = {
   brand: {
     name: "CLARIVENS",
     subtitle: "IT SOLUTION",
-    tagline: "Technology for simpler work",
-    mission: "Practical technology. Simpler workflows. Easier operations.",
-    descriptor: "TECHNOLOGY IMPLEMENTATION COMPANY",
+    tagline: "Custom Web Applications & Operational Systems",
+    mission: "We design and build custom web applications, internal tools, and automated data pipelines that eliminate manual spreadsheet dependencies and streamline organizational workflows.",
+    descriptor: "CUSTOM SOFTWARE & DIGITAL SYSTEMS AGENCY",
     email: "contact@clarivens.com",
     phone: "+1 (800) 555-CLARI",
     location: "Global Technology Delivery",
   },
   navLinks: [
-    { label: "Home", href: "#hero" },
+    { label: "Overview", href: "#hero" },
     { label: "Solutions", href: "#solutions" },
-    { label: "Products", href: "#attendance-solution" },
+    { label: "Case Study", href: "#attendance-solution" },
     { label: "Services", href: "#services" },
     { label: "About", href: "#about" },
     { label: "Contact", href: "#contact" },
   ],
   hero: {
-    eyebrow: "TECHNOLOGY FOR SIMPLER WORK",
-    headlineLine1: "MAKE WORK EASIER",
-    headlineLine2: "WITH TECHNOLOGY.",
-    description: "Clarivens IT Solution helps organizations simplify workflows, implement practical technology, and build better ways of working.",
-    ctaPrimary: "Explore Solutions",
-    ctaSecondary: "Talk to Us",
+    eyebrow: "CUSTOM SOFTWARE & WORKFLOW ENGINEERING",
+    headlineLine1: "ENGINEERING TOOLS",
+    headlineLine2: "THAT POWER OPERATIONS.",
+    description: "Clarivens designs and builds tailored web applications, internal staff portals, and unified operational systems that replace spreadsheet friction with dependable, maintainable software.",
+    ctaPrimary: "Explore Case Study",
+    ctaSecondary: "Schedule Consultation",
   },
   theProblem: {
-    eyebrow: "THE PROBLEM",
-    headline: "TECHNOLOGY SHOULD SIMPLIFY WORK, NOT ADD COMPLEXITY.",
-    description: "Organizations often deal with manual processes, disconnected information, repetitive tasks and inefficient workflows.",
+    eyebrow: "OPERATIONAL ANALYSIS",
+    headline: "SOFTWARE SHOULD ELIMINATE REPETITION, NOT MULTIPLY IT.",
+    description: "Growing teams struggle when critical operations rely on fragmented spreadsheets, manual handoffs, and unintegrated legacy systems.",
     frictionPoints: [
       {
-        id: "manual-work",
-        label: "INPUT PROCESS",
-        title: "Manual work",
-        desc: "Repetitive manual data entry, human error loops, and spreadsheet fatigue.",
-        delay: "High Latency"
+        id: "manual-data",
+        label: "Manual Entry",
+        title: "Spreadsheet Fatigue & Disconnects",
+        desc: "Team members spend hours re-entering data across multiple disconnected sheets and portals, increasing error rates.",
+        delay: "Staff Bottleneck"
       },
       {
-        id: "disconnected-info",
-        label: "DATA SILOS",
-        title: "Disconnected information",
-        desc: "Siloed applications that do not communicate, causing data fragmentation.",
-        delay: "Information Gap"
+        id: "siloed-systems",
+        label: "Data Silos",
+        title: "Unintegrated Third-Party Tools",
+        desc: "Critical operational records remain locked in separate applications with no single source of truth.",
+        delay: "Siloed Records"
       },
       {
         id: "repeated-effort",
-        label: "REDUNDANCY",
-        title: "Repeated effort",
-        desc: "Redundant status checks, copy-pasting between systems, duplicated validation.",
-        delay: "Time Drain"
+        label: "Redundancy",
+        title: "Duplicated Verification Steps",
+        desc: "Managers perform recurring manual audits and status checks that could be handled automatically.",
+        delay: "Wasted Hours"
       },
       {
         id: "operational-friction",
-        label: "BOTTLENECK",
-        title: "Operational friction",
-        desc: "Slow decisions caused by lack of real-time visibility and paper-based protocols.",
-        delay: "Process Stalled"
+        label: "Visibility",
+        title: "Delayed Operational Insights",
+        desc: "Leadership relies on weekly or monthly retrospective reports instead of live operational telemetry.",
+        delay: "Lagging Metrics"
       }
     ],
     outcomes: [
-      { id: "p1", title: "Connected process", status: "READY", detail: "End-to-end integration across teams" },
-      { id: "p2", title: "Clear information", status: "SYNCED", detail: "Single source of verified operational truth" },
-      { id: "p3", title: "Fewer unnecessary steps", status: "OPTIMIZED", detail: "Removal of redundant approvals and bottlenecks" },
-      { id: "p4", title: "Easier operation", status: "ACTIVE", detail: "Intuitive interfaces for everyday staff" }
+      { id: "p1", title: "Unified Relational Data", status: "CENTRALIZED", detail: "Single source of truth with strict role-based access" },
+      { id: "p2", title: "Automated Synchronization", status: "EVENT-DRIVEN", detail: "Background jobs replace repetitive manual copy-pasting" },
+      { id: "p3", title: "Real-time Exception Alerts", status: "PROACTIVE", detail: "Instant notifications when records require review" },
+      { id: "p4", title: "Intuitive Operator Portals", status: "STREAMLINED", detail: "Responsive interfaces designed for daily operational speed" }
     ]
   },
   approach: {
-    eyebrow: "THE CLARIVENS APPROACH",
-    headline: "FROM OPERATIONAL CHALLENGES TO PRACTICAL TECHNOLOGY.",
+    eyebrow: "OUR DELIVERY MODEL",
+    headline: "HOW WE DESIGN, BUILD, AND DEPLOY CUSTOM SOFTWARE.",
     pillars: [
       {
         step: "1",
-        title: "Understand",
-        description: "We examine the operation, not just the brief.",
-        details: "Before recommending software, we analyze how your teams actually work, where time is lost, and what bottlenecks slow down daily progress.",
-        deliverable: "Operational Context Mapping"
+        title: "Workflow Discovery",
+        description: "We map operational dependencies directly with your operators.",
+        details: "Before writing any code, we document your exact manual steps, identify edge cases, and define clear system requirements with your key stakeholders.",
+        deliverable: "Architecture Spec & Data Model"
       },
       {
         step: "2",
-        title: "Implement",
-        description: "We apply the technology that the work actually needs.",
-        details: "We build pragmatic, modular software tailored to your specific infrastructure, avoiding bloated enterprise features that hinder adoption.",
-        deliverable: "Targeted Software Deployment"
+        title: "Agile Engineering",
+        description: "Iterative development with bi-weekly working demos.",
+        details: "We build clean, test-driven applications using modern React, Node.js, and relational databases, shipping production-ready modules on a predictable schedule.",
+        deliverable: "Production Code & CI/CD Pipeline"
       },
       {
         step: "3",
-        title: "Simplify",
-        description: "We remove friction and create a clearer way forward.",
-        details: "Workflows become intuitive, feedback loops become instant, and your staff spend time advancing goals rather than navigating complex tooling.",
-        deliverable: "Streamlined Operational Continuity"
+        title: "Deployment & Handover",
+        description: "Smooth onboarding with complete documentation and training.",
+        details: "We handle data migration, train administrative staff, and provide complete documentation so your internal team has complete confidence and control.",
+        deliverable: "Deployment Docs & Team Enablement"
       }
     ]
   },
   prioritySectors: {
-    eyebrow: "PRIORITY SECTORS",
-    headline: "TECHNOLOGY BUILT AROUND THE WAY YOUR INDUSTRY WORKS.",
+    eyebrow: "INDUSTRY EXPERTISE",
+    headline: "TAILORED SOLUTIONS FOR OPERATIONALLY COMPLEX SECTORS.",
     sectors: [
       {
         id: "institutions",
-        title: "INSTITUTIONS",
-        subtitle: "Digital solutions that simplify institutional operations.",
+        title: "Educational & Training Institutions",
+        subtitle: "Custom portals that streamline student registration, staff tracking, and campus administration.",
         matrix: [
-          { name: "ATTENDANCE", desc: "Automated biometric, RFID & digital roll call tracking" },
-          { name: "ADMINISTRATION", desc: "Unified staff records, department workflows & approvals", active: true },
-          { name: "RECORDS", desc: "Centralized archival and instant student/faculty search" },
-          { name: "OPERATIONS", desc: "Campus logistics, asset allocation & resource booking" },
-          { name: "SYSTEMS", desc: "Secure cloud infrastructure & ERP synchronization", active: true },
-          { name: "LEARNING", desc: "Integrated curriculum tracking & student progress logs" }
+          { name: "ATTENDANCE", desc: "Automated timecard tracking, device synchronization & digital roll call rosters" },
+          { name: "RECORDS", desc: "Centralized archival and instant staff/student directory search", active: true },
+          { name: "APPROVALS", desc: "Digital submission and multi-tier approval workflows" },
+          { name: "OPERATIONS", desc: "Campus logistics, room allocation & resource scheduling" },
+          { name: "COMPLIANCE", desc: "Audit-ready reporting with exportable regulatory summaries", active: true },
+          { name: "INTEGRATION", desc: "Bi-directional synchronization with existing billing or ERP tools" }
         ],
         tags: [
-          "Attendance management",
-          "Administrative workflows",
-          "Institutional systems",
-          "Education technology"
+          "Staff & Student Records",
+          "Digital Approvals",
+          "Automated Attendance",
+          "Compliance Reporting"
         ]
       },
       {
         id: "automobile",
-        title: "AUTOMOBILE",
-        subtitle: "Technology that supports efficient automotive operations.",
-        code: "CV / 024",
+        title: "Automotive & Service Centers",
+        subtitle: "Digital dispatch and workflow management software for multi-bay service facilities.",
         flowStages: [
-          { step: "1", label: "Request", status: "Logged via mobile/kiosk" },
-          { step: "2", label: "Inspection", status: "Digital checklist verification" },
-          { step: "3", label: "Assignment", status: "Bay & technician dispatch", active: true },
-          { step: "4", label: "Service", status: "Live telemetry & parts tracking" },
-          { step: "5", label: "Complete", status: "Automated billing & customer handover" }
+          { step: "1", label: "Intake", status: "Customer check-in & issue logging" },
+          { step: "2", label: "Inspection", status: "Digital multi-point checklist" },
+          { step: "3", label: "Bay Dispatch", status: "Technician & bay assignment", active: true },
+          { step: "4", label: "Work in Progress", status: "Live parts & labor tracking" },
+          { step: "5", label: "Handover", status: "Automated invoice & vehicle release" }
         ],
         tags: [
-          "Workflow management",
-          "Service operations",
-          "Operational systems",
-          "Process improvement"
+          "Bay Dispatching",
+          "Digital Work Orders",
+          "Parts & Labor Tracking",
+          "Customer Status Updates"
         ]
       }
     ],
     beyondBanner: {
-      eyebrow: "BEYOND PRIORITY SECTORS",
-      text: "We also work with organizations across other industries where technology can simplify processes and solve operational challenges.",
-      industries: ["Healthcare", "Supply Chain & Logistics", "Manufacturing", "Professional Services", "Financial Services"]
+      eyebrow: "CROSS-INDUSTRY CAPABILITIES",
+      text: "Our modular software architecture easily adapts to logistics, healthcare clinics, wholesale distributors, and professional services firms.",
+      industries: ["Logistics & Warehousing", "Healthcare Clinics", "Wholesale Distribution", "Professional Services", "Commercial Facilities"]
     }
   },
   featuredSolution: {
-    eyebrow: "FEATURED SOLUTION",
-    headline: "ATTENDANCE, MADE SIMPLER.",
-    description: "A practical digital approach to managing attendance and reducing repetitive administrative work.",
-    cta: "Explore Solution",
+    eyebrow: "PRODUCTION CASE STUDY",
+    headline: "ENTERPRISE OPERATIONS & STAFF MANAGEMENT PORTAL",
+    description: "Engineered for multi-facility operations managing 500+ on-site personnel with automated roll-call validation, supervisory approval pipelines, and exportable audit logs.",
+    cta: "Review Similar Architecture",
     initialData: [
-      { id: "ST-0142", name: "Adisa M.", role: "Staff", status: "PRESENT", time: "08:06", department: "Admin" },
-      { id: "ST-0143", name: "Karan V.", role: "Engineering", status: "PRESENT", time: "08:11", department: "Systems" },
-      { id: "ST-0144", name: "Mira S.", role: "Operations", status: "ABSENT", time: "—", department: "Logistics" },
-      { id: "ST-0145", name: "Daniel A.", role: "Research", status: "PRESENT", time: "08:14", department: "Education" },
-      { id: "ST-0146", name: "Elena R.", role: "Management", status: "PRESENT", time: "08:22", department: "Executive" },
-      { id: "ST-0147", name: "Tariq K.", role: "Faculty", status: "ABSENT", time: "—", department: "Academic" }
+      { id: "ST-0142", name: "Adisa Mensah", role: "Site Coordinator", status: "PRESENT", time: "08:06 AM", department: "Operations" },
+      { id: "ST-0143", name: "Karan Verma", role: "Systems Engineer", status: "PRESENT", time: "08:11 AM", department: "Infrastructure" },
+      { id: "ST-0144", name: "Mira Solis", role: "Logistics Lead", status: "ABSENT", time: "—", department: "Supply Chain" },
+      { id: "ST-0145", name: "Daniel Alves", role: "Training Specialist", status: "PRESENT", time: "08:14 AM", department: "Education" },
+      { id: "ST-0146", name: "Elena Ramos", role: "Department Head", status: "PRESENT", time: "08:22 AM", department: "Executive" },
+      { id: "ST-0147", name: "Tariq Khan", role: "Quality Inspector", status: "ABSENT", time: "—", department: "Compliance" }
     ]
   },
   workflowTransformation: {
-    eyebrow: "WORKFLOW TRANSFORMATION",
-    headline: "TECHNOLOGY THAT REMOVES UNNECESSARY STEPS.",
-    centerTag: "4 STEPS → ONE FLOW",
+    eyebrow: "PROCESS MODERNIZATION",
+    headline: "REPLACING FRAGMENTED TOOLS WITH A UNIFIED APPLICATION.",
+    centerTag: "SYSTEM CONSOLIDATION",
     comparison: [
       {
         step: "1",
-        before: "Manual entry",
-        beforeDetail: "Paper logs & repeated spreadsheet input taking hours weekly",
-        after: "Digital workflow",
-        afterDetail: "Instant capture via modern web/mobile interfaces"
+        before: "Manual Spreadsheet Entries",
+        beforeDetail: "Staff enter recurring updates into individual spreadsheets prone to formula errors.",
+        after: "Structured Relational Database",
+        afterDetail: "Validated input forms writing directly to a centralized, backed-up database."
       },
       {
         step: "2",
-        before: "Separate records",
-        beforeDetail: "Siloed documents scattered across desks and desktop folders",
-        after: "Centralized information",
-        afterDetail: "Single synchronized cloud repository with role-based access"
+        before: "Isolated Department Files",
+        beforeDetail: "Files scattered across local folders and cloud drives without version control.",
+        after: "Centralized Document Repository",
+        afterDetail: "Single repository with role-based permissions and complete audit histories."
       },
       {
         step: "3",
-        before: "Repeated checking",
-        beforeDetail: "Manual reconciliations to detect missed updates and duplicates",
-        after: "Simpler management",
-        afterDetail: "Automated validation rules and instant exception alerts"
+        before: "Manual Verification Checks",
+        beforeDetail: "Supervisors spend hours cross-referencing records to identify missing entries.",
+        after: "Automated Exception Rules",
+        afterDetail: "System highlights anomalies automatically and flags records requiring manager action."
       },
       {
         step: "4",
-        before: "Delayed information",
-        beforeDetail: "End-of-month reporting lag preventing timely operational decisions",
-        after: "Faster visibility",
-        afterDetail: "Real-time telemetry and executive dashboards on demand"
+        before: "Delayed Retrospective Reports",
+        beforeDetail: "End-of-month reporting lag prevents timely interventions and cost adjustments.",
+        after: "Live Operational Dashboards",
+        afterDetail: "Real-time charts and exportable CSV/PDF summaries available on demand."
       }
     ]
   },
   services: {
-    eyebrow: "SERVICES",
-    headline: "BEYOND INDIVIDUAL SOLUTIONS.",
-    description: "Technology tailored to the way organizations actually work.",
+    eyebrow: "TECHNICAL CAPABILITIES",
+    headline: "END-TO-END SOFTWARE ENGINEERING SERVICES.",
+    description: "From greenfield internal portals to API middleware, we architect dependable software tailored to how your business runs.",
     list: [
       {
-        id: "software-dev",
-        title: "Software Development",
-        desc: "Custom applications built to resolve specific operational bottlenecks with clean, maintainable architecture.",
-        tech: ["React", "Node.js", "Python", "REST/GraphQL", "PostgreSQL"],
-        outcome: "Scalable enterprise tools"
+        id: "custom-web-apps",
+        title: "Custom Web Application Development",
+        desc: "Full-stack web applications designed from the ground up to solve your unique operational bottlenecks with modern React, Node.js, and PostgreSQL.",
+        tech: ["React", "TypeScript", "Node.js", "PostgreSQL", "Tailwind CSS"],
+        outcome: "Scalable enterprise web tools"
       },
       {
-        id: "web-solutions",
-        title: "Web Solutions",
-        desc: "High-performance responsive web portals and management interfaces designed for effortless day-to-day operation.",
-        tech: ["Modern React", "Tailwind CSS", "Vite", "Cloudflare", "API Gateway"],
-        outcome: "Sub-second loading times"
+        id: "internal-tools",
+        title: "Internal Tools & Operations Portals",
+        desc: "Custom administrative dashboards and staff portals that centralize data intake, user access control, and daily task management.",
+        tech: ["Role-Based Access", "REST/GraphQL APIs", "Data Grids", "Real-time Telemetry"],
+        outcome: "Eliminates spreadsheet dependencies"
       },
       {
-        id: "ui-ux",
-        title: "UI/UX Design",
-        desc: "Clean, human-centered interfaces that eliminate operator confusion, reduce training time, and encourage adoption.",
-        tech: ["Design Systems", "Figma", "User Journey Audits", "Accessibility WCAG"],
-        outcome: "Minimal cognitive load"
+        id: "system-integration",
+        title: "System & ERP Integrations",
+        desc: "Bi-directional API connectors and data synchronization pipelines that bridge the gap between third-party SaaS tools and internal databases.",
+        tech: ["Webhooks", "OAuth2", "Batch Sync", "Error Recovery Pipelines"],
+        outcome: "Seamless automated data flow"
       },
       {
-        id: "digital-workflows",
-        title: "Digital Workflow Solutions",
-        desc: "End-to-end digitization of paper forms, manual approvals, and recurring administrative sequences.",
-        tech: ["Event-Driven Pipelines", "Automated Validation", "Webhooks", "Audit Logs"],
-        outcome: "90% faster turnaround"
+        id: "workflow-automation",
+        title: "Workflow & Process Automation",
+        desc: "Automated event-driven sequences that trigger notifications, validate forms, and update downstream systems without manual human intervention.",
+        tech: ["Queue Workers", "Event Architecture", "Audit Logging", "Email/SMS Alerts"],
+        outcome: "Accelerates daily cycle times"
       },
       {
-        id: "automation",
-        title: "Automation",
-        desc: "Elimination of repetitive chores through smart batch processing, scheduled jobs, and system sync hooks.",
-        tech: ["Task Orchestration", "Data Sync", "Automated Triggers", "Error Recovery"],
-        outcome: "Zero duplicate entry"
+        id: "ui-ux-design",
+        title: "UI/UX & Design Systems",
+        desc: "Ergonomic, accessible interface design built for high-throughput daily use by real staff, reducing onboarding time and operator errors.",
+        tech: ["Figma Systems", "Component Libraries", "WCAG 2.1 AA", "Responsive UX"],
+        outcome: "Fast, intuitive user adoption"
       },
       {
-        id: "implementation",
-        title: "Technology Implementation",
-        desc: "Hands-on rollout, data migration, and infrastructure setup to ensure smooth transition without operational downtime.",
-        tech: ["Cloud Deployment", "Legacy Migration", "Team Onboarding", "SLA Monitoring"],
-        outcome: "Zero downtime rollout"
-      },
-      {
-        id: "custom-solutions",
-        title: "Customized Technology Solutions",
-        desc: "Specialized adaptations for unique institutional or industrial constraints where off-the-shelf software falls short.",
-        tech: ["Proprietary Integrations", "IoT/Hardware Bridges", "Custom Reporting"],
-        outcome: "Exact operational fit"
+        id: "modernization",
+        title: "Legacy System Modernization",
+        desc: "Carefully refactoring brittle legacy applications or Excel-heavy workflows into modern, cloud-hosted web systems without operational disruption.",
+        tech: ["Zero-Downtime Migration", "API Gateways", "Containerization", "Automated Testing"],
+        outcome: "Durable, maintainable codebases"
       }
     ]
   },
   howWeWork: {
-    eyebrow: "HOW WE WORK",
-    headline: "A CLEAR, PRACTICAL ENGAGEMENT FROM CONTEXT TO CONTINUITY.",
+    eyebrow: "ENGAGEMENT LIFECYCLE",
+    headline: "A STRUCTURED ROADMAP FROM DISCOVERY TO HANDOVER.",
     phases: [
       {
         step: "1",
-        title: "Understand",
-        summary: "Learn the context, operation and points of friction.",
-        deliverables: ["Process mapping", "Operator interviews", "Friction point audit"]
+        title: "Discovery & Architecture",
+        summary: "We evaluate your current workflow, interview operators, and define data models and system architecture.",
+        deliverables: ["Process mapping", "Architecture specification", "Database schema"]
       },
       {
         step: "2",
-        title: "Define",
-        summary: "Shape a practical, relevant technology response.",
-        deliverables: ["Architecture specification", "Interface wireframes", "Milestone timeline"]
+        title: "Milestone Sprints",
+        summary: "We build modular features in two-week sprint cycles with continuous client staging access and demos.",
+        deliverables: ["Working demo releases", "Bi-weekly sprint reviews", "Automated test suites"]
       },
       {
         step: "3",
-        title: "Develop",
-        summary: "Build and implement with clarity and discipline.",
-        deliverables: ["Modular code sprints", "Continuous client demos", "Rigorous QA testing"]
+        title: "Integration & Testing",
+        summary: "We connect hardware, test edge cases, and run end-to-end user acceptance testing with your staff.",
+        deliverables: ["Security review", "User acceptance testing", "Data migration scripts"]
       },
       {
         step: "4",
-        title: "Support",
-        summary: "Maintain continuity as the organization moves forward.",
-        deliverables: ["Team enablement", "SLA maintenance", "Iterative optimizations"]
+        title: "Production Handover",
+        summary: "We deploy to production, train your team, and provide full source code ownership and documentation.",
+        deliverables: ["100% IP transfer", "Deployment documentation", "Staff onboarding sessions"]
       }
     ]
   },
   about: {
     eyebrow: "ABOUT CLARIVENS",
-    headline: "TECHNOLOGY WITH A PRACTICAL PURPOSE.",
-    copy: "Clarivens IT Solution works at the intersection of technology and everyday operations. We understand organizational challenges, implement practical digital solutions, and simplify the workflows behind them.",
+    headline: "ENGINEERING SOFTWARE FOR COMPLEX OPERATIONS.",
+    copy: "Clarivens is a custom software development partner for organizations with demanding operational workflows. We partner directly with operational directors and engineering leaders to replace friction with modern, reliable web applications.",
     stats: [
-      { value: "99.8%", label: "System Availability" },
-      { value: "65%", label: "Average Manual Time Saved" },
-      { value: "48h", label: "Initial Architecture Sprint" },
-      { value: "100%", label: "Dedicated Operational Fit" }
+      { value: "100%", label: "Full IP & Source Ownership" },
+      { value: "Direct", label: "Senior Engineer Access" },
+      { value: "Custom", label: "Legacy Database Integrations" },
+      { value: "2-Week", label: "Sprint Demo Cadence" }
     ],
     principles: [
-      { title: "Pragmatism Over Novelty", text: "We do not push unnecessary trends; we deploy what solves the operational challenge reliably." },
-      { title: "Deep Operational Context", text: "We understand that software only succeeds if the human team on the ground loves using it." },
-      { title: "Built for Longevity", text: "Clean, documented, maintainable codebases that your company retains full sovereignty over." }
+      { title: "Production-Grade Architecture", text: "We engineer systems on proven enterprise foundations (React, Node.js, PostgreSQL) that your organization owns and operates without vendor lock-in." },
+      { title: "Direct Operator Collaboration", text: "Great operational software is designed alongside the people who use it every single day, ensuring fast and frictionless adoption." },
+      { title: "Complete Client Ownership", text: "You receive 100% of the source code, repository rights, and deployment documentation upon project completion." }
     ]
   },
   ctaSection: {
     eyebrow: "START A CONVERSATION",
     headline: "HAVE A WORKFLOW THAT COULD WORK BETTER?",
-    description: "Tell us what you are trying to simplify. We'll explore how technology can help.",
-    buttonText: "START A CONVERSATION"
+    description: "Tell us about your operational bottlenecks or custom software requirements. Our engineering team will review your scope and provide a practical implementation roadmap.",
+    buttonText: "Schedule Architecture Consultation"
   }
 };

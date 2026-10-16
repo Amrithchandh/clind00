@@ -51,7 +51,7 @@ export default function CustomAlert({
       
       <div className="flex-1 text-left">
         {title && (
-          <h4 className={`text-xs font-bold font-mono tracking-wide uppercase mb-1 ${currentStyle.titleColor}`}>
+          <h4 className={`text-xs font-bold font-display tracking-wide uppercase mb-1 ${currentStyle.titleColor}`}>
             {title}
           </h4>
         )}
