@@ -2,9 +2,9 @@ export const siteData = {
   brand: {
     name: "CLARIVENS",
     subtitle: "IT SOLUTIONS LLP",
-    tagline: "Custom Software That Simplifies Everyday Business Operations",
-    mission: "We design and develop custom software, practical web applications, and digital systems that replace messy manual paperwork and unorganized spreadsheets for growing businesses and institutions.",
-    descriptor: "CUSTOM SOFTWARE & PRACTICAL DIGITAL SYSTEMS",
+    tagline: "Custom Software Built for the Way Your Business Actually Works",
+    mission: "Clarivens IT Solutions LLP builds easy-to-use web applications, internal dashboards, and digital tools that help businesses replace paperwork and save daily working hours.",
+    descriptor: "CUSTOM SOFTWARE & PRACTICAL DIGITAL TOOLS",
     email: "info@clarivens.com",
     phone: "+91 88914 61561",
     phoneRaw: "+918891461561",
@@ -22,109 +22,104 @@ export const siteData = {
     { label: "Contact", href: "#contact" },
   ],
   hero: {
-    eyebrow: "PRACTICAL BUSINESS SOFTWARE & AUTOMATION",
-    headlineLine1: "SOFTWARE THAT FITS",
-    headlineLine2: "HOW YOUR BUSINESS ACTUALLY RUNS.",
-    description: "We build tailored web applications and internal portals that replace messy paperwork and confusing spreadsheets. From schools and automotive centers to logistics firms and local businesses, we give your team tools that are simple, fast, and easy to use.",
-    ctaPrimary: "Discuss Your Project",
-    ctaSecondary: "View Our Work",
+    eyebrow: "SIMPLE SOFTWARE & PORTALS FOR BUSINESSES",
+    headlineLine1: "CUSTOM SOFTWARE BUILT FOR THE WAY",
+    headlineLine2: "YOUR BUSINESS ACTUALLY WORKS.",
+    description: "Clarivens IT Solutions LLP builds easy-to-use web applications, internal dashboards, and digital tools that help businesses replace paperwork and save daily working hours.",
+    ctaPrimary: "Get in Touch",
+    ctaSecondary: "See Our Solutions",
     trustBadges: [
-      { title: "Tailored to Your Workflow", desc: "Shaped around your team, not the other way around" },
-      { title: "Direct Communication", desc: "Speak directly with the developers building your system" },
-      { title: "100% Software Ownership", desc: "You own your software and data with zero vendor lock-in" }
+      { title: "No Complicated Tech Jargon", desc: "We speak plain English, not confusing code" },
+      { title: "100% Owned by You", desc: "You own your software and data with zero vendor lock-in" },
+      { title: "Direct Support From Day One", desc: "Speak directly with the team who built your tool" }
     ]
   },
   services: {
     eyebrow: "WHAT WE DO",
-    headline: "SIMPLE, RELIABLE SOFTWARE FOR EVERYDAY OPERATIONS.",
-    description: "We focus on solving real operational problems with straightforward digital tools that your staff will actually enjoy using.",
+    headline: "SIMPLE DIGITAL TOOLS TO REPLACE MESSY PAPERWORK.",
+    description: "We don't build bloated software full of buttons you don't need. We build 3 practical everyday solutions designed around how your team actually works.",
     list: [
       {
         id: "custom-web-apps",
         title: "Custom Web Applications",
-        tagline: "Software designed around how your team actually works.",
-        desc: "Instead of forcing your staff to fit into rigid off-the-shelf software, we build custom web platforms tailored to your exact daily processes—accessible securely from any computer, tablet, or phone.",
-        benefits: ["Accessible anywhere on desktop or mobile", "No unnecessary confusing features", "Secure user logins with role permissions", "Designed for fast, easy staff onboarding"],
-        outcome: "A system built specifically for your business"
+        tagline: "Simple software tailored to your specific daily operations.",
+        desc: "Instead of forcing your staff to learn complicated off-the-shelf software, we build clean web tools designed around how you already run your business—accessible securely on any computer, tablet, or phone.",
+        benefits: [
+          "Accessible anywhere on phone, tablet, or PC",
+          "Clean layout with zero confusing clutter",
+          "Secure logins so staff only see what they need",
+          "Easy to learn in just 10 minutes"
+        ],
+        outcome: "Software that actually fits your workflow"
       },
       {
-        id: "internal-tools",
-        title: "Internal Dashboards & Staff Portals",
-        tagline: "Clean, private portals for attendance, records, and daily tasks.",
-        desc: "Bring all your internal operations into one organized screen. Track staff attendance, review pending supervisor approvals, look up customer records, and generate reports without searching through scattered desktop files.",
-        benefits: ["Live staff attendance & roll-call rosters", "Multi-tier approval workflows for managers", "Instant search across all records and files", "One-click export to PDF and Excel spreadsheets"],
-        outcome: "Eliminates spreadsheet confusion"
+        id: "staff-client-portals",
+        title: "Staff & Client Portals",
+        tagline: "Clean digital dashboards for attendance, records, and team management.",
+        desc: "Give your team a single private website to track staff attendance, maintain client records, assign jobs, and review requests without digging through messy file cabinets or shared drives.",
+        benefits: [
+          "One private link for all your daily records",
+          "Quick attendance and shift tracking",
+          "1-click PDF and Excel report downloads",
+          "Search any client or record in seconds"
+        ],
+        outcome: "Replaces lost paperwork and Excel chaos"
       },
       {
         id: "workflow-automation",
-        title: "Workflow & Data Automation",
-        tagline: "Connect your tools so you stop entering the same data twice.",
-        desc: "Stop wasting hours retyping the same information between forms, spreadsheets, and billing tools. We set up automated background flows that sync records, send instant alerts, and update invoices automatically.",
-        benefits: ["Automatic email & SMS notifications", "Eliminates double data entry mistakes", "Seamless connection with your existing tools", "Faster turnaround times for your customers"],
-        outcome: "Saves hours of repetitive manual work"
-      },
-      {
-        id: "modernization",
-        title: "Modernizing Outdated Systems",
-        tagline: "Upgrading old software without breaking your daily operations.",
-        desc: "If your operations still rely on fragile Excel sheets, paper registers, or aging desktop software, we safely migrate your records into modern, secure web systems with zero downtime or disruption to your customers.",
-        benefits: ["Safe, complete data migration", "Hands-on staff training and guidance", "Automatic cloud backups and security", "Zero disruption to your daily operations"],
-        outcome: "Reliable, modern tools you can depend on"
+        title: "Workflow Automation",
+        tagline: "Connect your daily tasks so your team stops doing repetitive manual entry.",
+        desc: "Stop wasting hours retyping client details or copy-pasting numbers between spreadsheets and billing apps. We connect your daily tasks so information moves automatically with zero mistakes.",
+        benefits: [
+          "Automatic SMS & WhatsApp status updates",
+          "Instant invoice and receipt generation",
+          "Stops double-entry between different tools",
+          "Automated reminders for unpaid bills and deadlines"
+        ],
+        outcome: "Saves your team hours every single day"
       }
     ]
   },
   prioritySectors: {
     eyebrow: "WHO WE HELP",
-    headline: "PRACTICAL SOLUTIONS FOR GROWING ORGANIZATIONS.",
-    description: "Whether you run a school, a busy service center, a warehouse, or a growing business, we design tools that match your exact operating routines.",
+    headline: "PRACTICAL SOLUTIONS FOR GROWING BUSINESSES.",
+    description: "We help institutions, workshops, and business owners replace manual chaos with reliable, everyday software.",
     sectors: [
       {
-        id: "institutions",
-        title: "Educational & Training Institutions",
-        subtitle: "Centralized campus portals for student records, staff attendance, and administration.",
+        id: "schools-colleges",
+        title: "Schools & Colleges",
+        subtitle: "Student records, staff attendance, and simple administrative tools.",
         capabilities: [
-          { title: "Staff & Student Attendance", desc: "Digital roll-call rosters and integration with biometric attendance devices" },
-          { title: "Centralized Records", desc: "Searchable directory for student profiles, academic history, and contact details" },
-          { title: "Approvals & Requests", desc: "Simple digital forms for leave applications, permission slips, and event scheduling" },
-          { title: "Reports & Compliance", desc: "Instant summaries ready for management meetings and regulatory audits" }
+          { title: "Student & Staff Records", desc: "A clean directory of student profiles, parent contacts, and staff details." },
+          { title: "Daily Attendance Tracking", desc: "Fast roll-call and biometric device tracking with zero lost sheets." },
+          { title: "Fee & Payment Records", desc: "Clear tracking of paid and pending fees with automated reminder notices." },
+          { title: "Instant Reports", desc: "Generate printable student reports and attendance summaries in 1 click." }
         ],
-        tags: ["Student Records", "Staff Attendance", "Leave Approvals", "Compliance Reports"]
+        tags: ["Student Profiles", "Staff Attendance", "Fee Records", "Printable Reports"]
       },
       {
-        id: "automobile",
-        title: "Automotive & Service Centers",
-        subtitle: "Digital workshop management for job cards, service tracking, and customer billing.",
+        id: "workshops-service-centers",
+        title: "Workshops & Service Centers",
+        subtitle: "Digital job cards, billing, and work-in-progress tracking.",
         capabilities: [
-          { title: "Customer Check-in & Intake", desc: "Quick digital vehicle intake with multi-point inspection checklists on tablets" },
-          { title: "Bay & Mechanic Dispatch", desc: "Clear visual board showing which technician is working on which car" },
-          { title: "Parts & Labor Tracking", desc: "Live tracking of parts used and labor time spent on every repair job" },
-          { title: "Automated Customer Updates", desc: "Send automated SMS or WhatsApp updates to vehicle owners when cars are ready" }
+          { title: "Digital Job Cards", desc: "Service technicians record notes and inspection checklists right on tablets." },
+          { title: "Work-in-Progress Board", desc: "A visual screen showing every job status, assigned technician, and pickup time." },
+          { title: "Parts & Labor Tracking", desc: "Log parts used on each vehicle so invoices calculate automatically." },
+          { title: "Automatic Customer SMS", desc: "Notify customers automatically when their vehicle or machine is ready for pickup." }
         ],
-        tags: ["Digital Job Cards", "Bay Dispatching", "Parts Tracking", "Customer SMS Alerts"]
+        tags: ["Digital Job Cards", "Live Status Board", "Parts & Billing", "Customer SMS Alerts"]
       },
       {
-        id: "logistics",
-        title: "Logistics & Warehousing",
-        subtitle: "Clear inventory tracking, dispatch management, and supplier coordination.",
+        id: "growing-businesses",
+        title: "Growing Businesses",
+        subtitle: "Custom internal tools to replace messy spreadsheets.",
         capabilities: [
-          { title: "Stock & Dispatch Tracking", desc: "Track incoming and outgoing items in real time with simple barcode logging" },
-          { title: "Vendor & Supplier Portals", desc: "Simple online submission for supplier invoices and purchase orders" },
-          { title: "Order Packing Logs", desc: "Step-by-step digital packing verification to eliminate shipping errors" },
-          { title: "Low-Stock Alerts", desc: "Automatic alerts so your purchasing team reorders before items run out" }
+          { title: "All-in-One Dashboard", desc: "See daily orders, customer inquiries, and staff tasks on one organized screen." },
+          { title: "Centralized Customer Files", desc: "Never lose a client quote, history note, or contact number again." },
+          { title: "Team Task Management", desc: "Assign work to your team and see what's done without constant follow-up calls." },
+          { title: "1-Click PDF Invoicing", desc: "Create and email clean invoices and receipts without manual formatting." }
         ],
-        tags: ["Inventory Tracking", "Dispatch Orders", "Supplier Invoices", "Low-Stock Alerts"]
-      },
-      {
-        id: "enterprise",
-        title: "Small & Medium Businesses",
-        subtitle: "Centralized operational tools that bring order to your daily business.",
-        capabilities: [
-          { title: "Custom Admin Dashboards", desc: "One clean dashboard showing daily sales, customer orders, and staff activity" },
-          { title: "Role-Based Staff Access", desc: "Give employees access to exactly what they need while keeping finances private" },
-          { title: "Automated Follow-ups", desc: "Reminders for pending customer invoices, quotes, and contract renewals" },
-          { title: "One-Click PDF Reports", desc: "Generate clean, branded invoices, receipts, and monthly business summaries" }
-        ],
-        tags: ["Admin Dashboards", "Staff Permissions", "Invoice Reminders", "PDF Reports"]
+        tags: ["Daily Dashboard", "Customer History", "Team Tasks", "1-Click Invoicing"]
       }
     ]
   },
@@ -132,36 +127,36 @@ export const siteData = {
     {
       id: "attendance-suite",
       client: "Educational Institution (500+ Staff)",
-      industry: "Education / Campus Operations",
+      industry: "Schools & Colleges",
       title: "Campus Staff Attendance & Operations Portal",
-      summary: "We built a centralized web portal connecting directly to campus attendance devices, replacing unorganized paper registers and manual spreadsheet calculations with instant verification and one-click monthly payroll summaries.",
-      challenge: "The institution's administrative team spent 3 to 4 days at the end of every month collecting paper registers from four separate campus buildings, manually cross-checking attendance cards and resolving calculation disputes.",
+      summary: "We built a simple web portal connecting directly to campus attendance devices, replacing unorganized paper registers and manual spreadsheet calculations with instant verification and one-click monthly payroll summaries.",
+      challenge: "The institution's administrative team spent 3 to 4 days at the end of every month collecting paper registers from four campus buildings, manually cross-checking attendance cards and resolving calculation disputes.",
       architecture: [
-        "Automatic synchronization with on-site attendance devices for instant check-in verification",
-        "Role-based staff portal where department heads can review and approve leave requests in seconds",
-        "Automated exception flagging that alerts supervisors only when attendance needs manual review",
-        "One-click monthly summaries exportable to Excel or PDF for immediate payroll processing"
+        "Automatic check-in syncing from on-site devices with zero manual punch-card entry",
+        "Simple staff portal where department heads can review and approve leave requests in seconds",
+        "Automated alerts that notify administrators only when an attendance item needs manual review",
+        "One-click monthly summaries exportable to Excel or PDF for payroll processing"
       ],
       metrics: [
         { value: "90%", label: "Less Time on Monthly Attendance", detail: "Down from 4 days of manual work to under an hour" },
         { value: "500+", label: "Daily Active Staff Members", detail: "Tracked across multiple campus buildings" },
-        { value: "100%", label: "Elimination of Lost Records", detail: "Every attendance punch safely archived digitally" },
+        { value: "100%", label: "Elimination of Lost Records", detail: "Every attendance record safely stored online" },
         { value: "Zero", label: "Payroll Disputes", detail: "Transparent attendance records agreed upon by staff" }
       ],
-      techStack: ["React", "Node.js", "PostgreSQL", "Tailwind CSS"],
+      techStack: ["Web Portal", "Attendance Sync", "Excel/PDF Export"],
       badge: "Real-World Project"
     },
     {
       id: "automobile-dispatch",
       client: "Multi-Bay Vehicle Service Center",
-      industry: "Automotive & Garage Management",
-      title: "Automotive Multi-Bay Service Dispatch System",
+      industry: "Workshops & Service Centers",
+      title: "Automotive Service & Bay Dispatch System",
       summary: "A practical tablet-friendly workshop system that replaces paper job cards and whiteboard schedules with real-time bay allocation, parts tracking, and automatic customer pickup notifications.",
       challenge: "Service advisors were constantly running between the reception desk and the garage floor to check vehicle repair status, leading to bay congestion, lost paper job cards, and frustrated customers waiting for phone updates.",
       architecture: [
         "Visual workshop board showing active bay status, assigned mechanics, and expected completion times",
-        "Tablet-friendly checklist for mechanics to document multi-point inspection items quickly",
-        "Live parts tracking linked directly to the parts inventory room",
+        "Tablet-friendly checklist for mechanics to document inspection items quickly",
+        "Live parts tracking linked directly to the parts room to prevent billing errors",
         "Automatic customer notifications sent via SMS when vehicle service milestones are completed"
       ],
       metrics: [
@@ -170,64 +165,64 @@ export const siteData = {
         { value: "Zero", label: "Lost Job Cards", detail: "Complete digital history from vehicle intake to handover" },
         { value: "18%", label: "Increase in Daily Capacity", detail: "Better bay scheduling opened up additional slots" }
       ],
-      techStack: ["React", "Node.js", "PostgreSQL", "Tailwind CSS"],
+      techStack: ["Tablet App", "Visual Board", "SMS Notifications"],
       badge: "Real-World Project"
     }
   ],
   process: {
     eyebrow: "HOW WE WORK",
-    headline: "A SIMPLE, TRANSPARENT 3-STEP PROCESS.",
-    description: "We believe building software shouldn't be confusing or stressful. We keep you informed at every step with clear milestones, working demos, and plain-English communication.",
+    headline: "A SIMPLE 3-STEP COLLABORATION.",
+    description: "Building software doesn't need to be intimidating. We work with you in 3 straightforward human steps.",
     phases: [
       {
         step: "01",
-        title: "Listen & Plan",
-        summary: "We sit down with you to understand your current daily operations, identify where your team is losing time, and map out a practical, easy-to-use software solution.",
-        deliverables: ["Understanding your exact workflow", "Clear, transparent project scope", "Simple visual layout plan"]
+        title: "Tell Us What's Slowing You Down",
+        summary: "We sit down for a friendly conversation to understand your current daily operations, identify where your team is losing time, and map out a simple solution.",
+        deliverables: ["Clear understanding of your workflow", "Plain-English project scope", "No obligation or pushy sales pitch"]
       },
       {
         step: "02",
-        title: "Build & Review",
-        summary: "We build your software in clear stages and share working previews early. You get to click around and test the system so we can adjust things based on your team's feedback.",
-        deliverables: ["Working prototype to test", "Regular progress updates", "Adjustments based on your feedback"]
+        title: "We Build a Working Preview",
+        summary: "We create a real working prototype early. You and your team get to click around, test the screens, and make adjustments until it feels completely right.",
+        deliverables: ["Real clickable working prototype", "Friendly progress updates", "Refinements based on your feedback"]
       },
       {
         step: "03",
         title: "Launch & Support",
-        summary: "We handle the full setup, help migrate your existing spreadsheets or paperwork, train your staff until everyone feels confident, and provide full ownership of your software.",
-        deliverables: ["Smooth system launch", "Hands-on staff training", "100% full software ownership"]
+        summary: "We set everything up, help import your existing spreadsheets or paperwork, show your team how to use it, and stay available whenever you need help.",
+        deliverables: ["Smooth setup & data migration", "Hands-on staff training", "100% full software ownership"]
       }
     ]
   },
   about: {
-    eyebrow: "ABOUT CLARIVENS IT SOLUTIONS LLP",
-    headline: "PRACTICAL TECHNOLOGY BUILT BY PEOPLE WHO CARE.",
-    copy: "Clarivens IT Solutions LLP is an independent software development firm based in Kerala, India, serving growing businesses and institutions worldwide. We partner directly with business owners, school administrators, and operations managers who are tired of dealing with rigid off-the-shelf software or confusing spreadsheets that don't fit their needs. We don't speak in heavy technical jargon or push bloated subscriptions—instead, we listen carefully, build clean tools, and deliver reliable software that saves your team hours of frustration every single week.",
+    eyebrow: "ABOUT US",
+    headline: "DEPENDABLE SOFTWARE WITHOUT THE HEADACHE.",
+    copy: "Clarivens IT Solutions LLP is an independent IT consultancy based in Kerala, India. We design dependable, straightforward digital systems and custom web tools that help businesses replace paperwork and save daily working hours. Our mission is to deliver practical, easy-to-use software without unnecessary costs, subscription traps, or technical complexity.",
     stats: [
-      { value: "100%", label: "Software Ownership" },
-      { value: "Direct", label: "Access to Developers" },
-      { value: "Simple", label: "Plain-English Updates" },
-      { value: "Zero", label: "Ongoing Vendor Lock-in" }
+      { value: "100%", label: "Owned by You" },
+      { value: "Direct", label: "Developer Access" },
+      { value: "Simple", label: "No Tech Jargon" },
+      { value: "Zero", label: "Monthly Per-Seat Fees" }
     ],
     principles: [
       {
-        title: "Tailored to Your Real Workflow",
-        text: "We design every screen and feature to match how your team actually works in the real world, making daily data entry fast and natural."
+        title: "No Complicated Tech Jargon",
+        text: "We explain everything in clear, everyday terms so you always understand what is being built."
       },
       {
-        title: "Direct Communication, No Middlemen",
-        text: "You speak directly with the engineers building your software. No confusing technical talk, no endless ticket queues—just quick, helpful answers."
+        title: "Direct Support From Day One",
+        text: "You communicate directly with the developers building your software—no middlemen or confusing ticket queues."
       },
       {
-        title: "Full Ownership of Your Software",
-        text: "You own 100% of your software, data, and code. No recurring per-user fees, no hostage licenses, and no vendor lock-in."
+        title: "100% Owned by You",
+        text: "You own your software, code, and business data completely. No recurring monthly per-user fees or vendor lock-in."
       }
     ]
   },
   ctaSection: {
-    eyebrow: "START A CONVERSATION",
-    headline: "HAVE A WORKFLOW THAT COULD WORK BETTER?",
-    description: "Tell us about what's slowing your team down or what tool you would like to build. We'll listen, share practical ideas, and provide a clear estimate—free of charge and without any pressure.",
-    buttonText: "Discuss Your Project"
+    eyebrow: "GET IN TOUCH",
+    headline: "READY TO REPLACE PAPERWORK AND SPREADSHEETS?",
+    description: "Tell us what's slowing your team down. We'll listen, share practical ideas, and provide a clear quote—free of charge and without any pressure.",
+    buttonText: "Get in Touch"
   }
 };

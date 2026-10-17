@@ -1,10 +1,10 @@
 import React from 'react';
-import { GraduationCap, Wrench, Truck, Briefcase, CheckCircle2, ArrowRight } from 'lucide-react';
+import { GraduationCap, Wrench, Briefcase, CheckCircle2, ArrowRight } from 'lucide-react';
 import { siteData } from '../data/siteData';
 import ScrollReveal from './common/ScrollReveal';
 
 export default function PrioritySectors({ onOpenContact }) {
-  const sectorIcons = [GraduationCap, Wrench, Truck, Briefcase];
+  const sectorIcons = [GraduationCap, Wrench, Briefcase];
 
   return (
     <section 
@@ -22,7 +22,7 @@ export default function PrioritySectors({ onOpenContact }) {
               </div>
               <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
                 PRACTICAL SOLUTIONS FOR <br className="hidden sm:inline" />
-                <span className="text-brand-600">GROWING ORGANIZATIONS.</span>
+                <span className="text-brand-600">GROWING BUSINESSES.</span>
               </h2>
             </div>
             <div className="lg:col-span-5">
@@ -33,8 +33,8 @@ export default function PrioritySectors({ onOpenContact }) {
           </div>
         </ScrollReveal>
 
-        {/* Priority Sectors Grid: 4 Industry Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+        {/* Priority Sectors Grid: 3 Industry Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
           {siteData.prioritySectors.sectors.map((sector, idx) => {
             const Icon = sectorIcons[idx % sectorIcons.length];
 
@@ -46,9 +46,6 @@ export default function PrioritySectors({ onOpenContact }) {
                       <div className="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 border border-emerald-100 flex items-center justify-center">
                         <Icon className="w-5 h-5" />
                       </div>
-                      <span className="font-sans text-[11px] font-bold uppercase tracking-wider text-slate-400">
-                        Solution 0{idx + 1}
-                      </span>
                     </div>
 
                     <h3 className="font-heading text-xl sm:text-2xl font-bold tracking-tight text-slate-900 mb-2">

@@ -99,7 +99,7 @@ export default function Hero({ onOpenContact }) {
                 variant="secondary"
                 size="lg"
                 onClick={() => {
-                  const el = document.getElementById('case-studies');
+                  const el = document.getElementById('services');
                   if (el) el.scrollIntoView({ behavior: 'smooth' });
                 }}
                 icon={ArrowUpRight}

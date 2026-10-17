@@ -2,25 +2,14 @@ import React, { useState, useEffect, useRef } from 'react';
 import { ArrowUpRight, Mail, Phone, MapPin } from 'lucide-react';
 import { siteData } from '../data/siteData';
 import ScrollReveal from './common/ScrollReveal';
-import CustomSelect from './ui/CustomSelect';
 import CustomButton from './ui/CustomButton';
 import CustomAlert from './ui/CustomAlert';
-
-const industryOptions = [
-  { value: "Educational & Training Institutions", label: "Educational & Training Institutions" },
-  { value: "Automotive & Service Centers", label: "Automotive & Service Centers" },
-  { value: "Logistics & Warehousing", label: "Logistics & Warehousing" },
-  { value: "Small & Medium Businesses", label: "Small & Medium Businesses" },
-  { value: "Healthcare & Clinics", label: "Healthcare & Clinics" },
-  { value: "Other", label: "Other Business / Specialized Sector" }
-];
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     organization: '',
-    industry: 'Educational & Training Institutions',
     message: ''
   });
   const [submitted, setSubmitted] = useState(false);
@@ -96,9 +85,9 @@ export default function ContactSection() {
                 {siteData.ctaSection.eyebrow}
               </div>
               <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
-                HAVE A WORKFLOW THAT <br />
-                COULD WORK <br />
-                <span className="text-brand-400">MUCH BETTER?</span>
+                READY TO REPLACE <br />
+                PAPERWORK &amp; <br />
+                <span className="text-brand-400">SPREADSHEETS?</span>
               </h2>
               <p className="font-sans text-slate-300 text-base sm:text-lg leading-relaxed pt-2">
                 {siteData.ctaSection.description}
@@ -108,7 +97,7 @@ export default function ContactSection() {
             {/* Direct Channels */}
             <div className="p-6 rounded-2xl bg-petrol-950/70 border border-petrol-800 space-y-4">
               <div className="font-heading text-xs font-bold uppercase tracking-wider text-brand-400">
-                Direct Communication &amp; Response
+                Direct Contact
               </div>
 
               <div className="space-y-3 font-sans text-xs text-slate-300 font-medium">
@@ -143,29 +132,29 @@ export default function ContactSection() {
               <div className="py-6 text-center space-y-5 animate-in fade-in duration-200 font-sans">
                 <CustomAlert 
                   type="success"
-                  title="Inquiry Received"
+                  title="Message Received"
                   className="mb-4 text-left"
                 >
-                  Thank you, <strong className="font-semibold text-emerald-950">{formData.name}</strong>. Our team will review your inquiry and reply to <strong className="font-semibold text-emerald-950">{formData.email}</strong> within 24 business hours to discuss how we can help.
+                  Thank you, <strong className="font-semibold text-emerald-950">{formData.name}</strong>. Our team will review your note and reply within 24 business hours.
                 </CustomAlert>
 
                 <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 text-left space-y-3 font-sans">
                   <span className="text-xs uppercase tracking-wider text-slate-500 font-bold block">
-                    Your Inquiry Summary
+                    Your Message Summary
                   </span>
                   <div className="grid grid-cols-2 gap-4 text-xs">
                     <div>
-                      <span className="text-slate-500 block">Organization:</span>
-                      <span className="font-semibold text-slate-800">{formData.organization || 'Not specified'}</span>
+                      <span className="text-slate-500 block">Name:</span>
+                      <span className="font-semibold text-slate-800">{formData.name}</span>
                     </div>
                     <div>
-                      <span className="text-slate-500 block">Industry Sector:</span>
-                      <span className="font-semibold text-slate-800">{formData.industry}</span>
+                      <span className="text-slate-500 block">Business:</span>
+                      <span className="font-semibold text-slate-800">{formData.organization || 'Not specified'}</span>
                     </div>
                   </div>
                   {formData.message && (
                     <div className="pt-2 border-t border-slate-200/60 text-xs">
-                      <span className="text-slate-500 block mb-1">Challenge / Project Notes:</span>
+                      <span className="text-slate-500 block mb-1">Challenge:</span>
                       <p className="text-slate-700 italic">"{formData.message}"</p>
                     </div>
                   )}
@@ -181,7 +170,7 @@ export default function ContactSection() {
                         name: '',
                         email: '',
                         organization: '',
-                        industry: 'Educational & Training Institutions',
+                        industry: 'General Inquiry',
                         message: ''
                       });
                     }}
@@ -191,17 +180,17 @@ export default function ContactSection() {
                 </div>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-5">
+              <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="flex items-center justify-between pb-3 border-b border-slate-100">
                   <h3 className="font-heading text-xl font-bold tracking-tight text-slate-900">
-                    Tell Us About Your Project
+                    Get in Touch
                   </h3>
                   <span className="font-sans text-xs text-brand-700 font-semibold bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200 uppercase tracking-wider">
                     Free Consultation
                   </span>
                 </div>
 
-                {/* Form fields */}
+                {/* Form fields: Name & Business */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block font-sans text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">
@@ -219,22 +208,6 @@ export default function ContactSection() {
 
                   <div>
                     <label className="block font-sans text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">
-                      Email Address *
-                    </label>
-                    <input
-                      type="email"
-                      required
-                      placeholder="e.g., rajesh@company.com"
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 font-sans text-xs focus:ring-2 focus:ring-brand-500 focus:outline-none font-medium"
-                    />
-                  </div>
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block font-sans text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">
                       Business / Organization Name
                     </label>
                     <input
@@ -245,28 +218,32 @@ export default function ContactSection() {
                       className="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 font-sans text-xs focus:ring-2 focus:ring-brand-500 focus:outline-none font-medium"
                     />
                   </div>
-
-                  <div>
-                    <label className="block font-sans text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">
-                      Your Industry / Field
-                    </label>
-                    <CustomSelect
-                      value={formData.industry}
-                      onChange={(val) => setFormData({ ...formData, industry: val })}
-                      options={industryOptions}
-                      placeholder="Select your industry"
-                    />
-                  </div>
                 </div>
 
+                {/* Email or Phone */}
                 <div>
                   <label className="block font-sans text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">
-                    What challenge can we help you solve? *
+                    Email Address or Phone Number *
+                  </label>
+                  <input
+                    type="text"
+                    required
+                    placeholder="e.g., rajesh@company.com or +91 98765 43210"
+                    value={formData.email}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    className="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 font-sans text-xs focus:ring-2 focus:ring-brand-500 focus:outline-none font-medium"
+                  />
+                </div>
+
+                {/* What challenge are you looking to solve? */}
+                <div>
+                  <label className="block font-sans text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">
+                    What challenge are you looking to solve? *
                   </label>
                   <textarea
                     required
                     rows={4}
-                    placeholder="Tell us about your daily operations, what takes too much manual time, or what software tool you need..."
+                    placeholder="Tell us about what's currently slowing your team down or what software tool you need..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     className="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 font-sans text-xs focus:ring-2 focus:ring-brand-500 focus:outline-none font-medium"

@@ -97,22 +97,17 @@ export default function Footer({ onOpenContact }) {
             <ul className="space-y-2.5 text-xs text-slate-400 font-medium font-sans">
               <li>
                 <a href="#solutions" className="hover:text-white transition-colors">
-                  Educational Institutions
+                  Schools &amp; Colleges
                 </a>
               </li>
               <li>
                 <a href="#solutions" className="hover:text-white transition-colors">
-                  Automotive Service Centers
+                  Workshops &amp; Service Centers
                 </a>
               </li>
               <li>
                 <a href="#solutions" className="hover:text-white transition-colors">
-                  Logistics &amp; Warehousing
-                </a>
-              </li>
-              <li>
-                <a href="#solutions" className="hover:text-white transition-colors">
-                  Small &amp; Medium Businesses
+                  Growing Businesses
                 </a>
               </li>
             </ul>
@@ -130,17 +125,12 @@ export default function Footer({ onOpenContact }) {
               </li>
               <li>
                 <a href="#services" className="hover:text-white transition-colors">
-                  Internal Dashboards &amp; Portals
+                  Staff &amp; Client Portals
                 </a>
               </li>
               <li>
                 <a href="#services" className="hover:text-white transition-colors">
-                  Workflow &amp; Data Automation
-                </a>
-              </li>
-              <li>
-                <a href="#services" className="hover:text-white transition-colors">
-                  Modernizing Legacy Systems
+                  Workflow Automation
                 </a>
               </li>
             </ul>
@@ -198,7 +188,7 @@ export default function Footer({ onOpenContact }) {
                   onClick={onOpenContact} 
                   className="inline-flex items-center gap-1.5 hover:text-brand-300 transition-colors text-left"
                 >
-                  <span>Discuss Your Project ↗</span>
+                  <span>Get in Touch ↗</span>
                 </button>
               </li>
             </ul>

@@ -23,8 +23,8 @@ export default function Services({ onOpenContact }) {
             </div>
 
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">
-              PRACTICAL SOFTWARE <br />
-              <span className="text-brand-600">FOR REAL OPERATIONS.</span>
+              SIMPLE DIGITAL TOOLS <br />
+              <span className="text-brand-600">TO REPLACE PAPERWORK.</span>
             </h2>
 
             <p className="font-sans text-slate-600 text-base leading-relaxed">

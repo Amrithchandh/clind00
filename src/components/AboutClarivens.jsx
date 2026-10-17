@@ -85,8 +85,8 @@ export default function AboutClarivens() {
                 {siteData.about.eyebrow}
               </div>
               <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">
-                PRACTICAL TECHNOLOGY <br />
-                <span className="text-brand-600">BUILT BY PEOPLE WHO CARE.</span>
+                DEPENDABLE SOFTWARE <br />
+                <span className="text-brand-600">WITHOUT THE HEADACHE.</span>
               </h2>
               <p className="font-sans text-slate-600 text-base sm:text-lg leading-relaxed pt-2">
                 {siteData.about.copy}
