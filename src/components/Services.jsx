@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { ArrowUpRight, Code, Globe, Palette, Cpu, Cog, Wrench, Sparkles } from 'lucide-react';
+import { ArrowUpRight, Code2, Globe, Database, Cpu, Cog, Layers } from 'lucide-react';
 import { siteData } from '../data/siteData';
 import ScrollReveal from './common/ScrollReveal';
 
 export default function Services({ onOpenContact }) {
   const [expandedService, setExpandedService] = useState(0);
-  const icons = [Code, Globe, Palette, Cpu, Cog, Wrench, Sparkles];
+  const icons = [Code2, Globe, Database, Cpu, Cog, Layers];
 
   return (
     <section 
@@ -36,7 +36,7 @@ export default function Services({ onOpenContact }) {
                 Core Engineering Standard
               </div>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Every service is backed by strict engineering guidelines: predictable architectures, responsive accessibility, comprehensive documentation, and zero vendor entrapment.
+                Every service is backed by disciplined engineering principles: predictable architectures, strict security standards, comprehensive documentation, and zero vendor lock-in.
               </p>
               <button
                 onClick={() => onOpenContact()}

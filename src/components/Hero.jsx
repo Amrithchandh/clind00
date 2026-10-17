@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowUpRight, ArrowRight } from 'lucide-react';
 import { siteData } from '../data/siteData';
-import HeroWorkflowWidget from './HeroWorkflowWidget';
+import HeroDashboardPreview from './HeroDashboardPreview';
 import CustomButton from './ui/CustomButton';
 
 export default function Hero({ onOpenContact }) {
@@ -89,7 +89,7 @@ export default function Hero({ onOpenContact }) {
                 variant="primary"
                 size="lg"
                 onClick={() => {
-                  const el = document.getElementById('attendance-solution');
+                  const el = document.getElementById('case-studies');
                   if (el) el.scrollIntoView({ behavior: 'smooth' });
                 }}
                 icon={ArrowRight}
@@ -117,31 +117,31 @@ export default function Hero({ onOpenContact }) {
             >
               <div>
                 <div className="font-heading text-2xl sm:text-3xl font-extrabold text-petrol-900">100%</div>
-                <div className="text-xs font-semibold text-slate-600 mt-1">Proprietary IP Ownership</div>
+                <div className="text-xs font-semibold text-slate-600 mt-1">Client Code Ownership</div>
               </div>
               <div>
                 <div className="font-heading text-2xl sm:text-3xl font-extrabold text-petrol-900">Direct</div>
-                <div className="text-xs font-semibold text-slate-600 mt-1">Engineer-to-Client Access</div>
+                <div className="text-xs font-semibold text-slate-600 mt-1">Senior Dev Access</div>
               </div>
               <div>
-                <div className="font-heading text-2xl sm:text-3xl font-extrabold text-brand-600">Custom</div>
-                <div className="text-xs font-semibold text-slate-600 mt-1">On-Prem &amp; Cloud Integrations</div>
+                <div className="font-heading text-2xl sm:text-3xl font-extrabold text-brand-600">Modern</div>
+                <div className="text-xs font-semibold text-slate-600 mt-1">React, Node &amp; SQL</div>
               </div>
               <div>
-                <div className="font-heading text-2xl sm:text-3xl font-extrabold text-petrol-900">Strict</div>
-                <div className="text-xs font-semibold text-slate-600 mt-1">Source Code Escrow</div>
+                <div className="font-heading text-2xl sm:text-3xl font-extrabold text-petrol-900">2-Week</div>
+                <div className="text-xs font-semibold text-slate-600 mt-1">Sprint Demos</div>
               </div>
             </div>
 
           </div>
 
-          {/* Right Column: Interactive Systems Preview */}
+          {/* Right Column: Realistic Application Preview */}
           <div 
             className={`lg:col-span-6 xl:col-span-6 transform-gpu transition-all duration-700 ease-out delay-200 ${
               isLoaded ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-4 scale-[0.99]'
             }`}
           >
-            <HeroWorkflowWidget />
+            <HeroDashboardPreview />
           </div>
 
         </div>

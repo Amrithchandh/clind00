@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import confetti from 'canvas-confetti';
 import { ArrowUpRight } from 'lucide-react';
 import CustomDialog from './ui/CustomDialog';
 import CustomSelect from './ui/CustomSelect';
@@ -9,7 +8,7 @@ import CustomAlert from './ui/CustomAlert';
 const serviceOptions = [
   { value: "Custom Web Applications", label: "Custom Web Application Development" },
   { value: "Internal Tools & Portals", label: "Internal Tools & Operations Portals" },
-  { value: "Staff Attendance System", label: "Staff Operations & Attendance Portal" },
+  { value: "Workforce & Attendance Suite", label: "Workforce Tracking & Attendance Suite" },
   { value: "Automobile Service Flow", label: "Automotive Multi-Bay Dispatch System" },
   { value: "System & ERP Integration", label: "System & ERP Integrations" },
   { value: "Workflow Automation", label: "Workflow & Process Automation" },
@@ -55,7 +54,6 @@ export default function ContactModal({ isOpen, onClose, preselectedService }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Cancel any previous in-flight request
     if (abortControllerRef.current) {
       abortControllerRef.current.abort();
     }
@@ -84,14 +82,6 @@ export default function ContactModal({ isOpen, onClose, preselectedService }) {
         if (!isMountedRef.current || signal.aborted) return;
         setLoading(false);
         setSubmitted(true);
-        try {
-          confetti({
-            particleCount: 100,
-            spread: 70,
-            origin: { y: 0.6 },
-            colors: ['#2ebd7f', '#10b981', '#34d399', '#ffffff']
-          });
-        } catch {}
       })
       .catch((err) => {
         if (err.name === 'AbortError') return;
@@ -116,7 +106,7 @@ export default function ContactModal({ isOpen, onClose, preselectedService }) {
       maxWidth="max-w-lg"
     >
       {submitted ? (
-        <div className="py-4 space-y-5 animate-in fade-in zoom-in-95 duration-200">
+        <div className="py-4 space-y-5 animate-in fade-in duration-200">
           <CustomAlert
             type="success"
             title="Consultation Request Confirmed"

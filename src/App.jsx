@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import TheProblem from './components/TheProblem';
-import Approach from './components/Approach';
 import PrioritySectors from './components/PrioritySectors';
-import AttendanceSolution from './components/AttendanceSolution';
-import WorkflowTransformation from './components/WorkflowTransformation';
+import CaseStudies from './components/CaseStudies';
 import Services from './components/Services';
-import EngagementModel from './components/EngagementModel';
+import Process from './components/Process';
 import AboutClarivens from './components/AboutClarivens';
 import ContactSection from './components/ContactSection';
 import ContactModal from './components/ContactModal';
@@ -34,35 +31,26 @@ export default function App() {
 
       {/* Main Content */}
       <main>
-        {/* Hero Section with Interactive Workflow Widget */}
+        {/* Hero Section with Realistic Operations Dashboard Preview */}
         <Hero onOpenContact={() => handleOpenContact()} />
 
-        {/* 01 / The Problem: Friction vs Clarivens Architecture */}
-        <TheProblem />
+        {/* 01 / Priority Sectors: Tailored Solutions for Operationally Intensive Sectors */}
+        <PrioritySectors onOpenContact={(sector) => handleOpenContact(sector)} />
 
-        {/* 02 / The Clarivens Approach: 3-Pillar Methodology */}
-        <Approach />
+        {/* 02 / Featured Case Studies: Enterprise Workforce Portal & Automotive Bay Dispatch */}
+        <CaseStudies onOpenContact={(study) => handleOpenContact(study)} />
 
-        {/* 03 / Priority Sectors: Institutions Matrix & Automobile Pipeline */}
-        <PrioritySectors />
-
-        {/* 04 / Featured Solution: Live Attendance SaaS Dashboard */}
-        <AttendanceSolution onOpenContact={() => handleOpenContact('Attendance System')} />
-
-        {/* 05 / Workflow Transformation: Before vs Clarivens One Flow */}
-        <WorkflowTransformation />
-
-        {/* 06 / Services: Expandable Technical Capabilities */}
+        {/* 03 / Services: End-to-End Technical Capabilities */}
         <Services onOpenContact={(srv) => handleOpenContact(srv)} />
 
-        {/* 07 / How We Work: 4-Phase Engagement Lifecycle */}
-        <EngagementModel />
+        {/* 04 / Our Delivery Model: 4-Phase Structured Engineering Roadmap */}
+        <Process />
 
-        {/* 08 / About Clarivens: High Precision Engineering Architecture */}
+        {/* 05 / About Clarivens: Agency Philosophy & Code Sovereignty */}
         <AboutClarivens />
 
-        {/* 09 / Start a Conversation: Interactive Inquiry Experience */}
-        <ContactSection onOpenModal={() => handleOpenContact()} />
+        {/* 06 / Start a Conversation: Project Inquiry & Scope Consultation */}
+        <ContactSection />
       </main>
 
       {/* Comprehensive Footer */}

@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import { ArrowUpRight, Menu, X, ChevronRight } from 'lucide-react';
 import { siteData } from '../data/siteData';
 import CustomButton from './ui/CustomButton';
-
 import logoMarkImg from '../assets/logo-mark.png';
 
 export const LogoMark = ({ className = "w-8 h-8" }) => (
@@ -20,7 +19,6 @@ export default function Navbar({ onOpenContact }) {
   const rafId = useRef(null);
 
   useEffect(() => {
-    // 1. Throttled scroll listener via requestAnimationFrame for navbar elevation
     const handleScroll = () => {
       if (rafId.current) return;
       rafId.current = window.requestAnimationFrame(() => {
@@ -32,8 +30,7 @@ export default function Navbar({ onOpenContact }) {
 
     window.addEventListener('scroll', handleScroll, { passive: true });
 
-    // 2. High-performance IntersectionObserver for section highlighting (no layout thrashing)
-    const sections = ['hero', 'solutions', 'attendance-solution', 'services', 'about', 'contact'];
+    const sections = ['hero', 'solutions', 'case-studies', 'services', 'process', 'about', 'contact'];
     const sectionObserver = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {

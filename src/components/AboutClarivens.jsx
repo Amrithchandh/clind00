@@ -2,7 +2,6 @@ import React from 'react';
 import { Target, Users, Award, ShieldCheck, CheckCircle2 } from 'lucide-react';
 import { siteData } from '../data/siteData';
 import ScrollReveal from './common/ScrollReveal';
-
 import logoMarkImg from '../assets/logo-mark.png';
 
 export default function AboutClarivens() {
@@ -15,9 +14,9 @@ export default function AboutClarivens() {
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
-          {/* Left Column: Agency Engineering Card */}
+          {/* Left Column: Agency Architecture Card */}
           <ScrollReveal direction="up" delay={100} className="lg:col-span-5 flex justify-center">
-            <div className="relative w-full max-w-lg bg-gradient-to-br from-slate-50 via-white to-emerald-50/30 rounded-3xl border border-slate-200/90 p-8 shadow-xs">
+            <div className="relative w-full max-w-lg bg-gradient-to-br from-slate-50 via-white to-emerald-50/30 rounded-3xl border border-slate-200/90 p-8 shadow-xs text-left">
               
               {/* Brand Header */}
               <div className="flex items-center justify-between pb-6 border-b border-slate-100">
@@ -27,7 +26,7 @@ export default function AboutClarivens() {
                   </div>
                   <div>
                     <h4 className="font-heading font-bold text-base text-slate-900">CLARIVENS</h4>
-                    <p className="text-xs font-semibold text-brand-700">Custom Software & Systems Agency</p>
+                    <p className="text-xs font-semibold text-brand-700">IT Solutions</p>
                   </div>
                 </div>
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200">

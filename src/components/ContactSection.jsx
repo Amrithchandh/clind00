@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ArrowUpRight, Mail, Phone, MapPin } from 'lucide-react';
-import confetti from 'canvas-confetti';
+import { ArrowUpRight, Mail, MapPin } from 'lucide-react';
 import { siteData } from '../data/siteData';
 import ScrollReveal from './common/ScrollReveal';
 import CustomSelect from './ui/CustomSelect';
@@ -8,11 +7,11 @@ import CustomButton from './ui/CustomButton';
 import CustomAlert from './ui/CustomAlert';
 
 const industryOptions = [
-  { value: "Institutions", label: "Institutions / Education" },
+  { value: "Institutions", label: "Educational & Training Institutions" },
   { value: "Automobile", label: "Automobile & Service Centers" },
+  { value: "Logistics", label: "Logistics & Supply Chain" },
   { value: "Healthcare", label: "Healthcare & Clinics" },
-  { value: "Supply Chain", label: "Logistics & Supply Chain" },
-  { value: "Enterprise", label: "Enterprise Administration" },
+  { value: "Enterprise", label: "Commercial & Enterprise Operations" },
   { value: "Other", label: "Other Specialized Sector" }
 ];
 
@@ -22,7 +21,7 @@ export default function ContactSection() {
     email: '',
     organization: '',
     industry: 'Institutions',
-    service: 'Attendance & Workflow Solutions',
+    service: 'Custom Web Applications',
     message: ''
   });
   const [submitted, setSubmitted] = useState(false);
@@ -43,7 +42,6 @@ export default function ContactSection() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Cancel any previous in-flight request to prevent race conditions
     if (abortControllerRef.current) {
       abortControllerRef.current.abort();
     }
@@ -54,7 +52,6 @@ export default function ContactSection() {
 
     setLoading(true);
 
-    // Hardened request pattern with AbortController
     new Promise((resolve, reject) => {
       const timer = setTimeout(() => {
         if (signal.aborted) {
@@ -73,22 +70,9 @@ export default function ContactSection() {
         if (!isMountedRef.current || signal.aborted) return;
         setLoading(false);
         setSubmitted(true);
-        try {
-          confetti({
-            particleCount: 80,
-            spread: 70,
-            origin: { y: 0.8 },
-            colors: ['#2ebd7f', '#10b981', '#34d399', '#ffffff']
-          });
-        } catch {
-          // graceful fallback
-        }
       })
       .catch((err) => {
-        if (err.name === 'AbortError') {
-          // Request was intentionally cancelled
-          return;
-        }
+        if (err.name === 'AbortError') return;
         if (isMountedRef.current) {
           setLoading(false);
         }
@@ -125,7 +109,7 @@ export default function ContactSection() {
             {/* Direct Channels */}
             <div className="p-6 rounded-2xl bg-petrol-950/70 border border-petrol-800 space-y-4">
               <div className="font-heading text-xs font-bold uppercase tracking-wider text-brand-400">
-                Direct Communication & Response
+                Direct Communication &amp; Response
               </div>
 
               <div className="space-y-3 text-xs text-slate-300 font-medium">
@@ -136,17 +120,13 @@ export default function ContactSection() {
                   </a>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Phone className="w-4 h-4 text-brand-400" />
-                  <span>{siteData.brand.phone}</span>
-                </div>
-                <div className="flex items-center gap-3">
                   <MapPin className="w-4 h-4 text-brand-400" />
                   <span>{siteData.brand.location}</span>
                 </div>
               </div>
 
               <div className="pt-2 border-t border-petrol-800 text-xs text-slate-400">
-                Response guarantee: Initial engineering review within 24 business hours.
+                Response commitment: Initial engineering review within 24 business hours.
               </div>
             </div>
           </ScrollReveal>
@@ -155,7 +135,7 @@ export default function ContactSection() {
           <ScrollReveal direction="up" delay={150} className="lg:col-span-7">
             <div className="bg-white text-slate-900 rounded-3xl p-7 sm:p-10 shadow-2xl border border-slate-200 text-left">
             {submitted ? (
-              <div className="py-6 text-center space-y-5 animate-in fade-in zoom-in-95 duration-200">
+              <div className="py-6 text-center space-y-5 animate-in fade-in duration-200">
                 <CustomAlert 
                   type="success"
                   title="Consultation Request Received"
@@ -166,7 +146,7 @@ export default function ContactSection() {
 
                 <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 text-left space-y-3">
                   <span className="text-xs uppercase tracking-wider text-slate-500 font-bold block">
-                    Recorded Scope Details
+                    Recorded Project Scope
                   </span>
                   <div className="grid grid-cols-2 gap-4 text-xs">
                     <div>
@@ -197,7 +177,7 @@ export default function ContactSection() {
                         email: '',
                         organization: '',
                         industry: 'Institutions',
-                        service: 'Attendance & Workflow Solutions',
+                        service: 'Custom Web Applications',
                         message: ''
                       });
                     }}

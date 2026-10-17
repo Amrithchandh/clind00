@@ -58,7 +58,7 @@ export default function Footer({ onOpenContact }) {
                 Engineering Delivery
               </div>
               <div className="text-sm font-sans text-slate-200 mt-0.5">
-                Global Implementation & Support
+                {siteData.brand.location}
               </div>
             </div>
             <button
@@ -92,27 +92,27 @@ export default function Footer({ onOpenContact }) {
 
           <div>
             <div className="font-display text-xs font-bold tracking-wider text-brand-400 uppercase mb-4">
-              Solutions & Case Studies
+              Solutions &amp; Case Studies
             </div>
             <ul className="space-y-2.5 text-xs text-slate-400 font-medium">
               <li>
-                <a href="#attendance-solution" className="hover:text-white transition-colors">
-                  Staff Operations Portal
+                <a href="#case-studies" className="hover:text-white transition-colors">
+                  Workforce &amp; Attendance Suite
                 </a>
               </li>
               <li>
-                <a href="#sectors" className="hover:text-white transition-colors">
-                  Educational Institution Suite
+                <a href="#case-studies" className="hover:text-white transition-colors">
+                  Automotive Bay Dispatch Portal
                 </a>
               </li>
               <li>
-                <a href="#sectors" className="hover:text-white transition-colors">
-                  Automotive Service Flow
+                <a href="#solutions" className="hover:text-white transition-colors">
+                  Education &amp; Campus Solutions
                 </a>
               </li>
               <li>
-                <a href="#workflow-transformation" className="hover:text-white transition-colors">
-                  Workflow Transformation
+                <a href="#solutions" className="hover:text-white transition-colors">
+                  Automotive &amp; Service Facilities
                 </a>
               </li>
             </ul>
@@ -130,17 +130,17 @@ export default function Footer({ onOpenContact }) {
               </li>
               <li>
                 <a href="#services" className="hover:text-white transition-colors">
-                  Internal Tools & Portals
+                  Internal Tools &amp; Portals
                 </a>
               </li>
               <li>
                 <a href="#services" className="hover:text-white transition-colors">
-                  System & ERP Integrations
+                  System &amp; ERP Integrations
                 </a>
               </li>
               <li>
                 <a href="#services" className="hover:text-white transition-colors">
-                  Legacy Modernization
+                  Legacy System Modernization
                 </a>
               </li>
             </ul>
@@ -153,7 +153,7 @@ export default function Footer({ onOpenContact }) {
             <ul className="space-y-2.5 text-xs text-slate-400 font-medium">
               <li>
                 <a 
-                  href="https://www.linkedin.com/company/clarivens-it-solutions/" 
+                  href={siteData.brand.linkedin} 
                   target="_blank" 
                   rel="noreferrer" 
                   className="inline-flex items-center gap-1.5 hover:text-white transition-colors"
@@ -165,7 +165,7 @@ export default function Footer({ onOpenContact }) {
               </li>
               <li>
                 <a 
-                  href="https://www.instagram.com/clarivens.itsolutions" 
+                  href={siteData.brand.instagram} 
                   target="_blank" 
                   rel="noreferrer" 
                   className="inline-flex items-center gap-1.5 hover:text-white transition-colors"
@@ -195,7 +195,7 @@ export default function Footer({ onOpenContact }) {
           </div>
           <div className="flex items-center gap-3">
             <span className="text-slate-400 font-semibold">
-              Custom Software & Digital Systems Agency
+              Custom Software &amp; Digital Systems Agency
             </span>
             <span>•</span>
             <span className="text-brand-400 font-semibold">100% Client Source Code Ownership</span>
