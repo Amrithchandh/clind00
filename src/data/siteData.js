@@ -1,232 +1,233 @@
 export const siteData = {
   brand: {
     name: "CLARIVENS",
-    subtitle: "IT SOLUTIONS",
-    tagline: "Custom Web Applications & Operational Software",
-    mission: "We design, engineer, and deploy custom web applications, internal operations portals, and automated data pipelines that eliminate manual bottlenecks and streamline organizational workflows.",
-    descriptor: "CUSTOM SOFTWARE & DIGITAL SYSTEMS AGENCY",
+    subtitle: "IT SOLUTIONS LLP",
+    tagline: "Custom Software That Simplifies Everyday Business Operations",
+    mission: "We design and develop custom software, practical web applications, and digital systems that replace messy manual paperwork and unorganized spreadsheets for growing businesses and institutions.",
+    descriptor: "CUSTOM SOFTWARE & PRACTICAL DIGITAL SYSTEMS",
     email: "info@clarivens.com",
     phone: "+91 88914 61561",
     phoneRaw: "+918891461561",
-    location: "Kerala, India • Serving Clients Globally",
+    location: "Kerala, India • Serving Clients Worldwide",
     linkedin: "https://www.linkedin.com/company/clarivens-it-solutions/",
     instagram: "https://www.instagram.com/clarivens.itsolutions",
   },
   navLinks: [
     { label: "Overview", href: "#hero" },
-    { label: "Solutions", href: "#solutions" },
-    { label: "Case Studies", href: "#case-studies" },
-    { label: "Services", href: "#services" },
-    { label: "Process", href: "#process" },
-    { label: "About", href: "#about" },
+    { label: "What We Do", href: "#services" },
+    { label: "Who We Help", href: "#solutions" },
+    { label: "Our Work", href: "#case-studies" },
+    { label: "How We Work", href: "#process" },
+    { label: "About Us", href: "#about" },
     { label: "Contact", href: "#contact" },
   ],
   hero: {
-    eyebrow: "CUSTOM SOFTWARE & WORKFLOW ENGINEERING",
-    headlineLine1: "ENGINEERING TOOLS",
-    headlineLine2: "THAT POWER OPERATIONS.",
-    description: "Clarivens IT Solutions designs and builds tailored web applications, internal staff portals, and unified operational systems that replace spreadsheet friction with dependable, maintainable software.",
-    ctaPrimary: "Explore Case Studies",
-    ctaSecondary: "Schedule Consultation",
+    eyebrow: "PRACTICAL BUSINESS SOFTWARE & AUTOMATION",
+    headlineLine1: "SOFTWARE THAT FITS",
+    headlineLine2: "HOW YOUR BUSINESS ACTUALLY RUNS.",
+    description: "We build tailored web applications and internal portals that replace messy paperwork and confusing spreadsheets. From schools and automotive centers to logistics firms and local businesses, we give your team tools that are simple, fast, and easy to use.",
+    ctaPrimary: "Discuss Your Project",
+    ctaSecondary: "View Our Work",
+    trustBadges: [
+      { title: "Tailored to Your Workflow", desc: "Shaped around your team, not the other way around" },
+      { title: "Direct Communication", desc: "Speak directly with the developers building your system" },
+      { title: "100% Software Ownership", desc: "You own your software and data with zero vendor lock-in" }
+    ]
+  },
+  services: {
+    eyebrow: "WHAT WE DO",
+    headline: "SIMPLE, RELIABLE SOFTWARE FOR EVERYDAY OPERATIONS.",
+    description: "We focus on solving real operational problems with straightforward digital tools that your staff will actually enjoy using.",
+    list: [
+      {
+        id: "custom-web-apps",
+        title: "Custom Web Applications",
+        tagline: "Software designed around how your team actually works.",
+        desc: "Instead of forcing your staff to fit into rigid off-the-shelf software, we build custom web platforms tailored to your exact daily processes—accessible securely from any computer, tablet, or phone.",
+        benefits: ["Accessible anywhere on desktop or mobile", "No unnecessary confusing features", "Secure user logins with role permissions", "Designed for fast, easy staff onboarding"],
+        outcome: "A system built specifically for your business"
+      },
+      {
+        id: "internal-tools",
+        title: "Internal Dashboards & Staff Portals",
+        tagline: "Clean, private portals for attendance, records, and daily tasks.",
+        desc: "Bring all your internal operations into one organized screen. Track staff attendance, review pending supervisor approvals, look up customer records, and generate reports without searching through scattered desktop files.",
+        benefits: ["Live staff attendance & roll-call rosters", "Multi-tier approval workflows for managers", "Instant search across all records and files", "One-click export to PDF and Excel spreadsheets"],
+        outcome: "Eliminates spreadsheet confusion"
+      },
+      {
+        id: "workflow-automation",
+        title: "Workflow & Data Automation",
+        tagline: "Connect your tools so you stop entering the same data twice.",
+        desc: "Stop wasting hours retyping the same information between forms, spreadsheets, and billing tools. We set up automated background flows that sync records, send instant alerts, and update invoices automatically.",
+        benefits: ["Automatic email & SMS notifications", "Eliminates double data entry mistakes", "Seamless connection with your existing tools", "Faster turnaround times for your customers"],
+        outcome: "Saves hours of repetitive manual work"
+      },
+      {
+        id: "modernization",
+        title: "Modernizing Outdated Systems",
+        tagline: "Upgrading old software without breaking your daily operations.",
+        desc: "If your operations still rely on fragile Excel sheets, paper registers, or aging desktop software, we safely migrate your records into modern, secure web systems with zero downtime or disruption to your customers.",
+        benefits: ["Safe, complete data migration", "Hands-on staff training and guidance", "Automatic cloud backups and security", "Zero disruption to your daily operations"],
+        outcome: "Reliable, modern tools you can depend on"
+      }
+    ]
   },
   prioritySectors: {
-    eyebrow: "INDUSTRY SOLUTIONS",
-    headline: "PURPOSE-BUILT FOR OPERATIONALLY INTENSIVE SECTORS.",
-    description: "Generic off-the-shelf software forces businesses to distort their workflows. We engineer custom portals modeled precisely around your industry's operating procedures, hierarchy, and data models.",
+    eyebrow: "WHO WE HELP",
+    headline: "PRACTICAL SOLUTIONS FOR GROWING ORGANIZATIONS.",
+    description: "Whether you run a school, a busy service center, a warehouse, or a growing business, we design tools that match your exact operating routines.",
     sectors: [
       {
         id: "institutions",
         title: "Educational & Training Institutions",
-        subtitle: "Centralized portals that streamline student records, attendance tracking, and campus administration.",
+        subtitle: "Centralized campus portals for student records, staff attendance, and administration.",
         capabilities: [
-          { title: "Attendance Automation", desc: "Digital roll-call rosters and biometric hardware synchronization" },
-          { title: "Student & Staff Records", desc: "Centralized directory with role-based administrative permissions" },
-          { title: "Approval Pipelines", desc: "Multi-tier leave requests, course approvals, and event scheduling" },
-          { title: "Compliance & Audits", desc: "Automated attendance logs ready for regulatory submission" }
+          { title: "Staff & Student Attendance", desc: "Digital roll-call rosters and integration with biometric attendance devices" },
+          { title: "Centralized Records", desc: "Searchable directory for student profiles, academic history, and contact details" },
+          { title: "Approvals & Requests", desc: "Simple digital forms for leave applications, permission slips, and event scheduling" },
+          { title: "Reports & Compliance", desc: "Instant summaries ready for management meetings and regulatory audits" }
         ],
-        tags: ["Staff & Student Directory", "Biometric Sync", "Digital Approvals", "Audit Reporting"]
+        tags: ["Student Records", "Staff Attendance", "Leave Approvals", "Compliance Reports"]
       },
       {
         id: "automobile",
-        title: "Automotive & Service Facilities",
-        subtitle: "Digital dispatch and workflow management software for multi-bay service centers.",
+        title: "Automotive & Service Centers",
+        subtitle: "Digital workshop management for job cards, service tracking, and customer billing.",
         capabilities: [
-          { title: "Intake & Digital Check-In", desc: "Rapid customer check-in with digital multi-point inspection checklists" },
-          { title: "Bay Dispatching", desc: "Real-time technician assignment and bay occupancy scheduling" },
-          { title: "Work in Progress Tracking", desc: "Live parts requisition, labor tracking, and technician notes" },
-          { title: "Automated Invoicing", desc: "Seamless billing handover and instant SMS vehicle status updates" }
+          { title: "Customer Check-in & Intake", desc: "Quick digital vehicle intake with multi-point inspection checklists on tablets" },
+          { title: "Bay & Mechanic Dispatch", desc: "Clear visual board showing which technician is working on which car" },
+          { title: "Parts & Labor Tracking", desc: "Live tracking of parts used and labor time spent on every repair job" },
+          { title: "Automated Customer Updates", desc: "Send automated SMS or WhatsApp updates to vehicle owners when cars are ready" }
         ],
-        tags: ["Bay Dispatching", "Digital Job Cards", "Parts & Labor Tracking", "Customer SMS Alerts"]
+        tags: ["Digital Job Cards", "Bay Dispatching", "Parts Tracking", "Customer SMS Alerts"]
+      },
+      {
+        id: "logistics",
+        title: "Logistics & Warehousing",
+        subtitle: "Clear inventory tracking, dispatch management, and supplier coordination.",
+        capabilities: [
+          { title: "Stock & Dispatch Tracking", desc: "Track incoming and outgoing items in real time with simple barcode logging" },
+          { title: "Vendor & Supplier Portals", desc: "Simple online submission for supplier invoices and purchase orders" },
+          { title: "Order Packing Logs", desc: "Step-by-step digital packing verification to eliminate shipping errors" },
+          { title: "Low-Stock Alerts", desc: "Automatic alerts so your purchasing team reorders before items run out" }
+        ],
+        tags: ["Inventory Tracking", "Dispatch Orders", "Supplier Invoices", "Low-Stock Alerts"]
       },
       {
         id: "enterprise",
-        title: "Logistics & Commercial Operations",
-        subtitle: "Unified inventory tracking, order management, and ERP synchronization pipelines.",
+        title: "Small & Medium Businesses",
+        subtitle: "Centralized operational tools that bring order to your daily business.",
         capabilities: [
-          { title: "Warehouse Dispatch", desc: "Real-time stock movement, barcode scanning, and order packing logs" },
-          { title: "Vendor Portals", desc: "Secure supplier invoice submission and purchase order reconciliation" },
-          { title: "ERP Connectors", desc: "Automated two-way data sync between operational tools and finance systems" },
-          { title: "Executive Dashboards", desc: "Live operational telemetry, exception alerts, and custom KPI reports" }
+          { title: "Custom Admin Dashboards", desc: "One clean dashboard showing daily sales, customer orders, and staff activity" },
+          { title: "Role-Based Staff Access", desc: "Give employees access to exactly what they need while keeping finances private" },
+          { title: "Automated Follow-ups", desc: "Reminders for pending customer invoices, quotes, and contract renewals" },
+          { title: "One-Click PDF Reports", desc: "Generate clean, branded invoices, receipts, and monthly business summaries" }
         ],
-        tags: ["Warehouse Telemetry", "Vendor Reconciliation", "ERP Sync", "Executive KPIs"]
+        tags: ["Admin Dashboards", "Staff Permissions", "Invoice Reminders", "PDF Reports"]
       }
     ]
   },
   caseStudies: [
     {
       id: "attendance-suite",
-      client: "Enterprise Educational Campus",
-      industry: "Education / Institutional",
-      title: "Enterprise Workforce Tracking & Operations Management Suite",
-      summary: "Custom-engineered for multi-facility operations managing 500+ on-site personnel across multiple campus buildings. Consolidates biometric terminal synchronization, roll-call verification, supervisory exception approvals, and compliance audit logs into a single authoritative web system.",
-      challenge: "The campus relied on manual spreadsheets and disconnected hardware clocks across four separate facilities, causing hours of reconciliation lag every pay cycle and frequent reporting discrepancies.",
+      client: "Educational Institution (500+ Staff)",
+      industry: "Education / Campus Operations",
+      title: "Campus Staff Attendance & Operations Portal",
+      summary: "We built a centralized web portal connecting directly to campus attendance devices, replacing unorganized paper registers and manual spreadsheet calculations with instant verification and one-click monthly payroll summaries.",
+      challenge: "The institution's administrative team spent 3 to 4 days at the end of every month collecting paper registers from four separate campus buildings, manually cross-checking attendance cards and resolving calculation disputes.",
       architecture: [
-        "Event-driven Node.js & PostgreSQL synchronization engine that ingests check-in events in real time",
-        "Role-based staff portal with tiered permissions for Site Coordinators, Department Heads, and Compliance Officers",
-        "Automated exception flagging when staff timecards require supervisory sign-offs",
-        "One-click audit export generating regulatory compliance summaries in CSV and PDF"
+        "Automatic synchronization with on-site attendance devices for instant check-in verification",
+        "Role-based staff portal where department heads can review and approve leave requests in seconds",
+        "Automated exception flagging that alerts supervisors only when attendance needs manual review",
+        "One-click monthly summaries exportable to Excel or PDF for immediate payroll processing"
       ],
       metrics: [
-        { value: "85%", label: "Faster Payroll Reconciliation", detail: "Down from 3 days to under 2 hours per cycle" },
-        { value: "500+", label: "Daily Active Personnel", detail: "Tracked seamlessly across 4 campus hubs" },
-        { value: "100%", label: "Source Code Ownership", detail: "Full IP transfer with Dockerized deployment" },
-        { value: "99.98%", label: "System Availability", detail: "Zero data loss across 12 synchronized terminals" }
+        { value: "90%", label: "Less Time on Monthly Attendance", detail: "Down from 4 days of manual work to under an hour" },
+        { value: "500+", label: "Daily Active Staff Members", detail: "Tracked across multiple campus buildings" },
+        { value: "100%", label: "Elimination of Lost Records", detail: "Every attendance punch safely archived digitally" },
+        { value: "Zero", label: "Payroll Disputes", detail: "Transparent attendance records agreed upon by staff" }
       ],
-      techStack: ["React", "TypeScript", "Node.js", "PostgreSQL", "Docker", "Tailwind CSS"],
-      badge: "Production Deployment"
+      techStack: ["React", "Node.js", "PostgreSQL", "Tailwind CSS"],
+      badge: "Real-World Project"
     },
     {
       id: "automobile-dispatch",
-      client: "Multi-Bay Automotive Service Center",
-      industry: "Automotive & Fleet",
-      title: "Automotive Multi-Bay Service Dispatch & Workflow System",
-      summary: "Comprehensive digital dispatch platform replacing paper job cards and manual whiteboards with real-time bay allocation, parts inventory clearance, and customer progress notifications.",
-      challenge: "Service advisors spent significant time tracking down technicians on the shop floor to determine vehicle status, causing bay bottlenecks, customer delays, and untracked labor hours.",
+      client: "Multi-Bay Vehicle Service Center",
+      industry: "Automotive & Garage Management",
+      title: "Automotive Multi-Bay Service Dispatch System",
+      summary: "A practical tablet-friendly workshop system that replaces paper job cards and whiteboard schedules with real-time bay allocation, parts tracking, and automatic customer pickup notifications.",
+      challenge: "Service advisors were constantly running between the reception desk and the garage floor to check vehicle repair status, leading to bay congestion, lost paper job cards, and frustrated customers waiting for phone updates.",
       architecture: [
-        "Live floorboard view displaying active bay assignments, technician availability, and estimated completion times",
-        "Mobile-optimized technician checklist for rapid vehicle inspection and photo documentation",
-        "Automated inventory reservation system linking work orders directly to parts room stock",
-        "Customer notification trigger sending automated SMS updates at key milestones (intake, inspection, ready for pickup)"
+        "Visual workshop board showing active bay status, assigned mechanics, and expected completion times",
+        "Tablet-friendly checklist for mechanics to document multi-point inspection items quickly",
+        "Live parts tracking linked directly to the parts inventory room",
+        "Automatic customer notifications sent via SMS when vehicle service milestones are completed"
       ],
       metrics: [
-        { value: "35%", label: "Turnaround Acceleration", detail: "Average service cycle time reduced by over an hour" },
-        { value: "100%", label: "Paperless Operations", detail: "Over 450 monthly paper work orders fully digitized" },
-        { value: "18%", label: "Increase in Daily Throughput", detail: "Optimized bay scheduling unlocked additional daily slots" },
-        { value: "Zero", label: "Lost Work Orders", detail: "Complete digital audit trail from intake to handover" }
+        { value: "35%", label: "Faster Vehicle Turnaround", detail: "Average service time reduced by over an hour per car" },
+        { value: "100%", label: "Paperless Job Cards", detail: "Over 450 monthly paper work orders fully digitized" },
+        { value: "Zero", label: "Lost Job Cards", detail: "Complete digital history from vehicle intake to handover" },
+        { value: "18%", label: "Increase in Daily Capacity", detail: "Better bay scheduling opened up additional slots" }
       ],
-      techStack: ["React", "Node.js / Express", "PostgreSQL", "WebSockets", "Tailwind CSS"],
-      badge: "Production Deployment"
+      techStack: ["React", "Node.js", "PostgreSQL", "Tailwind CSS"],
+      badge: "Real-World Project"
     }
   ],
-  services: {
-    eyebrow: "TECHNICAL CAPABILITIES",
-    headline: "END-TO-END SOFTWARE ENGINEERING SERVICES.",
-    description: "From custom internal portals to bi-directional API middleware, we architect dependable software tailored to how your business operates.",
-    list: [
-      {
-        id: "custom-web-apps",
-        title: "Custom Web Application Development",
-        desc: "Full-stack web applications designed from the ground up to eliminate operational bottlenecks using modern React, Node.js, and PostgreSQL.",
-        tech: ["React", "TypeScript", "Node.js", "PostgreSQL", "Tailwind CSS"],
-        outcome: "Scalable enterprise web tools"
-      },
-      {
-        id: "internal-tools",
-        title: "Internal Tools & Operations Portals",
-        desc: "Custom administrative dashboards and staff portals that centralize data intake, user access control, and daily task management.",
-        tech: ["Role-Based Access", "REST/GraphQL APIs", "Data Grids", "Real-Time Telemetry"],
-        outcome: "Eliminates spreadsheet dependencies"
-      },
-      {
-        id: "system-integration",
-        title: "System & ERP Integrations",
-        desc: "Bi-directional API connectors and data synchronization pipelines that bridge the gap between third-party SaaS tools and internal databases.",
-        tech: ["Webhooks", "OAuth2", "Batch Sync", "Error Recovery Pipelines"],
-        outcome: "Seamless automated data flow"
-      },
-      {
-        id: "workflow-automation",
-        title: "Workflow & Process Automation",
-        desc: "Event-driven background processes that trigger notifications, validate forms, and update downstream systems without manual intervention.",
-        tech: ["Queue Workers", "Event Architecture", "Audit Logging", "Email/SMS Alerts"],
-        outcome: "Accelerates daily cycle times"
-      },
-      {
-        id: "ui-ux-design",
-        title: "UI/UX & Design Systems",
-        desc: "Ergonomic, accessible interface design built for high-throughput daily use by real staff, reducing onboarding time and operator errors.",
-        tech: ["Figma Systems", "Component Libraries", "WCAG 2.1 AA", "Responsive UX"],
-        outcome: "Fast, intuitive user adoption"
-      },
-      {
-        id: "modernization",
-        title: "Legacy System Modernization",
-        desc: "Carefully refactoring brittle legacy applications or Excel-heavy workflows into modern, cloud-hosted web systems without operational disruption.",
-        tech: ["Zero-Downtime Migration", "API Gateways", "Containerization", "Automated Testing"],
-        outcome: "Durable, maintainable codebases"
-      }
-    ]
-  },
   process: {
-    eyebrow: "OUR DELIVERY MODEL",
-    headline: "A STRUCTURED ROADMAP FROM SCOPING TO HANDOVER.",
-    description: "Predictable software delivery requires disciplined engineering. Every engagement follows a transparent 4-stage lifecycle with bi-weekly working demos and complete client IP ownership.",
+    eyebrow: "HOW WE WORK",
+    headline: "A SIMPLE, TRANSPARENT 3-STEP PROCESS.",
+    description: "We believe building software shouldn't be confusing or stressful. We keep you informed at every step with clear milestones, working demos, and plain-English communication.",
     phases: [
       {
         step: "01",
-        title: "Discovery & Technical Scoping",
-        summary: "We interview operators, map existing manual workflows, and define clear system requirements, entity relations, and architecture specifications.",
-        deliverables: ["Process mapping document", "Architecture specification", "Database schema blueprint"]
+        title: "Listen & Plan",
+        summary: "We sit down with you to understand your current daily operations, identify where your team is losing time, and map out a practical, easy-to-use software solution.",
+        deliverables: ["Understanding your exact workflow", "Clear, transparent project scope", "Simple visual layout plan"]
       },
       {
         step: "02",
-        title: "Architecture & Interactive Prototype",
-        summary: "We build responsive UI prototypes and finalize database models, giving your team early hands-on validation of critical workflows before writing core logic.",
-        deliverables: ["Clickable Figma / React prototype", "API contracts", "Security & role model"]
+        title: "Build & Review",
+        summary: "We build your software in clear stages and share working previews early. You get to click around and test the system so we can adjust things based on your team's feedback.",
+        deliverables: ["Working prototype to test", "Regular progress updates", "Adjustments based on your feedback"]
       },
       {
         step: "03",
-        title: "Milestone Sprints & CI/CD",
-        summary: "We engineer features in structured two-week sprints, providing continuous client staging access, automated test suites, and transparent progress reviews.",
-        deliverables: ["Bi-weekly working demos", "Staging environment access", "Automated test coverage"]
-      },
-      {
-        step: "04",
-        title: "Production Deployment & Handover",
-        summary: "We manage production deployment, execute data migration, conduct staff enablement sessions, and transfer 100% of the repository and IP rights.",
-        deliverables: ["Production deployment", "Complete source code & IP transfer", "Comprehensive documentation"]
+        title: "Launch & Support",
+        summary: "We handle the full setup, help migrate your existing spreadsheets or paperwork, train your staff until everyone feels confident, and provide full ownership of your software.",
+        deliverables: ["Smooth system launch", "Hands-on staff training", "100% full software ownership"]
       }
     ]
   },
   about: {
-    eyebrow: "ABOUT CLARIVENS",
-    headline: "ENGINEERING SOFTWARE FOR COMPLEX OPERATIONS.",
-    copy: "Clarivens IT Solutions is a technology services firm dedicated to building dependable operational software for organizations with high-volume workflows. We partner directly with operational directors and engineering leaders to replace manual spreadsheets with modern, reliable web applications.",
+    eyebrow: "ABOUT CLARIVENS IT SOLUTIONS LLP",
+    headline: "PRACTICAL TECHNOLOGY BUILT BY PEOPLE WHO CARE.",
+    copy: "Clarivens IT Solutions LLP is an independent software development firm based in Kerala, India, serving growing businesses and institutions worldwide. We partner directly with business owners, school administrators, and operations managers who are tired of dealing with rigid off-the-shelf software or confusing spreadsheets that don't fit their needs. We don't speak in heavy technical jargon or push bloated subscriptions—instead, we listen carefully, build clean tools, and deliver reliable software that saves your team hours of frustration every single week.",
     stats: [
-      { value: "100%", label: "Client Code & IP Ownership" },
-      { value: "Direct", label: "Senior Engineer Access" },
-      { value: "2-Week", label: "Sprint Demo Cadence" },
-      { value: "Zero", label: "Vendor Lock-in" }
+      { value: "100%", label: "Software Ownership" },
+      { value: "Direct", label: "Access to Developers" },
+      { value: "Simple", label: "Plain-English Updates" },
+      { value: "Zero", label: "Ongoing Vendor Lock-in" }
     ],
     principles: [
       {
-        title: "Production-Grade Architecture",
-        text: "We engineer systems on proven enterprise foundations (React, Node.js, PostgreSQL, Docker) that your organization owns and operates with complete freedom."
+        title: "Tailored to Your Real Workflow",
+        text: "We design every screen and feature to match how your team actually works in the real world, making daily data entry fast and natural."
       },
       {
-        title: "Operator-Centered Design",
-        text: "Great operational software is designed alongside the people who use it daily, ensuring intuitive adoption, rapid data entry, and minimal training overhead."
+        title: "Direct Communication, No Middlemen",
+        text: "You speak directly with the engineers building your software. No confusing technical talk, no endless ticket queues—just quick, helpful answers."
       },
       {
-        title: "Complete Client Sovereignty",
-        text: "You receive 100% of the source code, repository access, and deployment documentation upon project completion. No proprietary lock-ins or recurring license hostage fees."
+        title: "Full Ownership of Your Software",
+        text: "You own 100% of your software, data, and code. No recurring per-user fees, no hostage licenses, and no vendor lock-in."
       }
     ]
   },
   ctaSection: {
     eyebrow: "START A CONVERSATION",
     headline: "HAVE A WORKFLOW THAT COULD WORK BETTER?",
-    description: "Tell us about your operational bottlenecks or custom software requirements. Our senior engineering team will review your scope and provide a practical implementation roadmap within 24 business hours.",
-    buttonText: "Schedule Architecture Consultation"
+    description: "Tell us about what's slowing your team down or what tool you would like to build. We'll listen, share practical ideas, and provide a clear estimate—free of charge and without any pressure.",
+    buttonText: "Discuss Your Project"
   }
 };

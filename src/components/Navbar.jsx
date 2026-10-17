@@ -30,7 +30,7 @@ export default function Navbar({ onOpenContact }) {
 
     window.addEventListener('scroll', handleScroll, { passive: true });
 
-    const sections = ['hero', 'solutions', 'case-studies', 'services', 'process', 'about', 'contact'];
+    const sections = ['hero', 'services', 'solutions', 'case-studies', 'process', 'about', 'contact'];
     const sectionObserver = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {

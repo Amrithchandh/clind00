@@ -34,22 +34,22 @@ export default function App() {
         {/* Hero Section with Realistic Operations Dashboard Preview */}
         <Hero onOpenContact={() => handleOpenContact()} />
 
-        {/* 01 / Priority Sectors: Tailored Solutions for Operationally Intensive Sectors */}
-        <PrioritySectors onOpenContact={(sector) => handleOpenContact(sector)} />
-
-        {/* 02 / Featured Case Studies: Enterprise Workforce Portal & Automotive Bay Dispatch */}
-        <CaseStudies onOpenContact={(study) => handleOpenContact(study)} />
-
-        {/* 03 / Services: End-to-End Technical Capabilities */}
+        {/* 01 / What We Do: 4 Everyday Software Solutions */}
         <Services onOpenContact={(srv) => handleOpenContact(srv)} />
 
-        {/* 04 / Our Delivery Model: 4-Phase Structured Engineering Roadmap */}
+        {/* 02 / Who We Help: Tailored Industry Solutions */}
+        <PrioritySectors onOpenContact={(sector) => handleOpenContact(sector)} />
+
+        {/* 03 / Our Work: Real-World Case Studies */}
+        <CaseStudies onOpenContact={(study) => handleOpenContact(study)} />
+
+        {/* 04 / How We Work: Simple 3-Step Collaboration */}
         <Process />
 
-        {/* 05 / About Clarivens: Agency Philosophy & Code Sovereignty */}
+        {/* 05 / About Clarivens: Company Story & Principles */}
         <AboutClarivens />
 
-        {/* 06 / Start a Conversation: Project Inquiry & Scope Consultation */}
+        {/* 06 / Tell Us About Your Project: Free Consultation & Inquiry */}
         <ContactSection />
       </main>
 

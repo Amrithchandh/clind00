@@ -7,12 +7,12 @@ import CustomButton from './ui/CustomButton';
 import CustomAlert from './ui/CustomAlert';
 
 const industryOptions = [
-  { value: "Institutions", label: "Educational & Training Institutions" },
-  { value: "Automobile", label: "Automobile & Service Centers" },
-  { value: "Logistics", label: "Logistics & Supply Chain" },
-  { value: "Healthcare", label: "Healthcare & Clinics" },
-  { value: "Enterprise", label: "Commercial & Enterprise Operations" },
-  { value: "Other", label: "Other Specialized Sector" }
+  { value: "Educational & Training Institutions", label: "Educational & Training Institutions" },
+  { value: "Automotive & Service Centers", label: "Automotive & Service Centers" },
+  { value: "Logistics & Warehousing", label: "Logistics & Warehousing" },
+  { value: "Small & Medium Businesses", label: "Small & Medium Businesses" },
+  { value: "Healthcare & Clinics", label: "Healthcare & Clinics" },
+  { value: "Other", label: "Other Business / Specialized Sector" }
 ];
 
 export default function ContactSection() {
@@ -20,8 +20,7 @@ export default function ContactSection() {
     name: '',
     email: '',
     organization: '',
-    industry: 'Institutions',
-    service: 'Custom Web Applications',
+    industry: 'Educational & Training Institutions',
     message: ''
   });
   const [submitted, setSubmitted] = useState(false);
@@ -97,9 +96,9 @@ export default function ContactSection() {
                 {siteData.ctaSection.eyebrow}
               </div>
               <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
-                HAVE A CRITICAL SYSTEM <br />
-                THAT NEEDS TO <br />
-                <span className="text-brand-400">PERFORM BETTER?</span>
+                HAVE A WORKFLOW THAT <br />
+                COULD WORK <br />
+                <span className="text-brand-400">MUCH BETTER?</span>
               </h2>
               <p className="font-sans text-slate-300 text-base sm:text-lg leading-relaxed pt-2">
                 {siteData.ctaSection.description}
@@ -132,7 +131,7 @@ export default function ContactSection() {
               </div>
 
               <div className="pt-2 border-t border-petrol-800 font-sans text-xs text-slate-400">
-                Response commitment: Initial engineering review within 24 business hours.
+                Response commitment: Direct reply from our team within 24 business hours.
               </div>
             </div>
           </ScrollReveal>
@@ -144,15 +143,15 @@ export default function ContactSection() {
               <div className="py-6 text-center space-y-5 animate-in fade-in duration-200 font-sans">
                 <CustomAlert 
                   type="success"
-                  title="Consultation Request Received"
+                  title="Inquiry Received"
                   className="mb-4 text-left"
                 >
-                  Thank you, <strong className="font-semibold text-emerald-950">{formData.name}</strong>. An engineering partner from Clarivens will review your requirements and reply to <strong className="font-semibold text-emerald-950">{formData.email}</strong> within 24 business hours.
+                  Thank you, <strong className="font-semibold text-emerald-950">{formData.name}</strong>. Our team will review your inquiry and reply to <strong className="font-semibold text-emerald-950">{formData.email}</strong> within 24 business hours to discuss how we can help.
                 </CustomAlert>
 
                 <div className="bg-slate-50 p-6 rounded-2xl border border-slate-200/80 text-left space-y-3 font-sans">
                   <span className="text-xs uppercase tracking-wider text-slate-500 font-bold block">
-                    Recorded Project Scope
+                    Your Inquiry Summary
                   </span>
                   <div className="grid grid-cols-2 gap-4 text-xs">
                     <div>
@@ -166,7 +165,7 @@ export default function ContactSection() {
                   </div>
                   {formData.message && (
                     <div className="pt-2 border-t border-slate-200/60 text-xs">
-                      <span className="text-slate-500 block mb-1">Project Summary:</span>
+                      <span className="text-slate-500 block mb-1">Challenge / Project Notes:</span>
                       <p className="text-slate-700 italic">"{formData.message}"</p>
                     </div>
                   )}
@@ -182,13 +181,12 @@ export default function ContactSection() {
                         name: '',
                         email: '',
                         organization: '',
-                        industry: 'Institutions',
-                        service: 'Custom Web Applications',
+                        industry: 'Educational & Training Institutions',
                         message: ''
                       });
                     }}
                   >
-                    Submit Another Inquiry
+                    Send Another Message
                   </CustomButton>
                 </div>
               </div>
@@ -196,10 +194,10 @@ export default function ContactSection() {
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div className="flex items-center justify-between pb-3 border-b border-slate-100">
                   <h3 className="font-heading text-xl font-bold tracking-tight text-slate-900">
-                    Schedule an Architecture Consultation
+                    Tell Us About Your Project
                   </h3>
                   <span className="font-sans text-xs text-brand-700 font-semibold bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200 uppercase tracking-wider">
-                    Confidential
+                    Free Consultation
                   </span>
                 </div>
 
@@ -212,7 +210,7 @@ export default function ContactSection() {
                     <input
                       type="text"
                       required
-                      placeholder="Jane Doe"
+                      placeholder="e.g., Rajesh Kumar"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       className="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 font-sans text-xs focus:ring-2 focus:ring-brand-500 focus:outline-none font-medium"
@@ -221,12 +219,12 @@ export default function ContactSection() {
 
                   <div>
                     <label className="block font-sans text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">
-                      Work Email *
+                      Email Address *
                     </label>
                     <input
                       type="email"
                       required
-                      placeholder="jane@organization.com"
+                      placeholder="e.g., rajesh@company.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       className="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 font-sans text-xs focus:ring-2 focus:ring-brand-500 focus:outline-none font-medium"
@@ -237,11 +235,11 @@ export default function ContactSection() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block font-sans text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">
-                      Organization Name
+                      Business / Organization Name
                     </label>
                     <input
                       type="text"
-                      placeholder="Company / Institution"
+                      placeholder="e.g., Apex Academy or City Motors"
                       value={formData.organization}
                       onChange={(e) => setFormData({ ...formData, organization: e.target.value })}
                       className="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 font-sans text-xs focus:ring-2 focus:ring-brand-500 focus:outline-none font-medium"
@@ -250,25 +248,25 @@ export default function ContactSection() {
 
                   <div>
                     <label className="block font-sans text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">
-                      Primary Industry
+                      Your Industry / Field
                     </label>
                     <CustomSelect
                       value={formData.industry}
                       onChange={(val) => setFormData({ ...formData, industry: val })}
                       options={industryOptions}
-                      placeholder="Select primary industry"
+                      placeholder="Select your industry"
                     />
                   </div>
                 </div>
 
                 <div>
                   <label className="block font-sans text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">
-                    Describe your project or systems requirements *
+                    What challenge can we help you solve? *
                   </label>
                   <textarea
                     required
                     rows={4}
-                    placeholder="Describe your current systems, integration needs, or custom internal tool requirements..."
+                    placeholder="Tell us about your daily operations, what takes too much manual time, or what software tool you need..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     className="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 font-sans text-xs focus:ring-2 focus:ring-brand-500 focus:outline-none font-medium"

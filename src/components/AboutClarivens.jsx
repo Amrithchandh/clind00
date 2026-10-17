@@ -14,7 +14,7 @@ export default function AboutClarivens() {
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
-          {/* Left Column: Agency Architecture Card */}
+          {/* Left Column: Agency Card */}
           <ScrollReveal direction="up" delay={100} className="lg:col-span-5 flex justify-center">
             <div className="relative w-full max-w-lg bg-gradient-to-br from-slate-50 via-white to-emerald-50/30 rounded-3xl border border-slate-200/90 p-8 shadow-xs text-left">
               
@@ -26,12 +26,12 @@ export default function AboutClarivens() {
                   </div>
                   <div>
                     <h4 className="font-heading font-bold text-base text-slate-900">CLARIVENS</h4>
-                    <p className="font-sans text-xs font-semibold text-brand-700">IT Solutions</p>
+                    <p className="font-sans text-xs font-semibold text-brand-700">IT Solutions LLP</p>
                   </div>
                 </div>
                 <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-sans text-xs font-semibold bg-emerald-50 text-emerald-800 border border-emerald-200 uppercase tracking-wider">
                   <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
-                  Direct Access
+                  Direct Support
                 </span>
               </div>
 
@@ -42,8 +42,8 @@ export default function AboutClarivens() {
                     <Target className="w-4 h-4" />
                   </div>
                   <div>
-                    <div className="font-heading text-xs font-bold tracking-tight text-slate-900">Purpose-Built Architecture</div>
-                    <div className="font-sans text-[11px] text-slate-500 mt-0.5">Custom schemas and responsive UIs built for your team's specific daily procedures.</div>
+                    <div className="font-heading text-xs font-bold tracking-tight text-slate-900">Tailored to Your Real Workflow</div>
+                    <div className="font-sans text-[11px] text-slate-500 mt-0.5">Software designed around how your team actually works in the real world.</div>
                   </div>
                 </div>
 
@@ -52,8 +52,8 @@ export default function AboutClarivens() {
                     <Users className="w-4 h-4" />
                   </div>
                   <div>
-                    <div className="font-heading text-xs font-bold tracking-tight text-slate-900">Operator-Centered UX</div>
-                    <div className="font-sans text-[11px] text-slate-500 mt-0.5">Ergonomic workflows that reduce onboarding time and operator training overhead.</div>
+                    <div className="font-heading text-xs font-bold tracking-tight text-slate-900">Direct Developer Access</div>
+                    <div className="font-sans text-[11px] text-slate-500 mt-0.5">Speak directly with the engineers building your tools—no salespeople or middlemen.</div>
                   </div>
                 </div>
 
@@ -62,16 +62,16 @@ export default function AboutClarivens() {
                     <Award className="w-4 h-4" />
                   </div>
                   <div>
-                    <div className="font-heading text-xs font-bold tracking-tight text-slate-900">Complete Code Sovereignty</div>
-                    <div className="font-sans text-[11px] text-slate-500 mt-0.5">100% intellectual property rights, repository access, and deployment ownership.</div>
+                    <div className="font-heading text-xs font-bold tracking-tight text-slate-900">100% Software Ownership</div>
+                    <div className="font-sans text-[11px] text-slate-500 mt-0.5">You own your software and database completely, with zero ongoing vendor lock-in.</div>
                   </div>
                 </div>
               </div>
 
               {/* Bottom Assurance */}
               <div className="pt-4 border-t border-slate-100 flex items-center justify-between font-sans text-xs text-slate-500 font-medium">
-                <span>Production Standards</span>
-                <span className="text-brand-700 font-bold uppercase tracking-wider">Documented Handover</span>
+                <span>Reliable Technology</span>
+                <span className="text-brand-700 font-bold uppercase tracking-wider">Hands-on Support</span>
               </div>
 
             </div>
@@ -85,8 +85,8 @@ export default function AboutClarivens() {
                 {siteData.about.eyebrow}
               </div>
               <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">
-                ENGINEERING SOFTWARE <br />
-                <span className="text-brand-600">FOR COMPLEX OPERATIONS.</span>
+                PRACTICAL TECHNOLOGY <br />
+                <span className="text-brand-600">BUILT BY PEOPLE WHO CARE.</span>
               </h2>
               <p className="font-sans text-slate-600 text-base sm:text-lg leading-relaxed pt-2">
                 {siteData.about.copy}

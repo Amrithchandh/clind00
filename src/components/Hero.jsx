@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowUpRight, ArrowRight } from 'lucide-react';
+import { ArrowUpRight, ArrowRight, CheckCircle2 } from 'lucide-react';
 import { siteData } from '../data/siteData';
 import HeroDashboardPreview from './HeroDashboardPreview';
 import CustomButton from './ui/CustomButton';
@@ -88,10 +88,7 @@ export default function Hero({ onOpenContact }) {
               <CustomButton
                 variant="primary"
                 size="lg"
-                onClick={() => {
-                  const el = document.getElementById('case-studies');
-                  if (el) el.scrollIntoView({ behavior: 'smooth' });
-                }}
+                onClick={onOpenContact}
                 icon={ArrowRight}
                 className="group px-7 py-3.5 font-heading font-bold shadow-sm"
               >
@@ -101,7 +98,10 @@ export default function Hero({ onOpenContact }) {
               <CustomButton
                 variant="secondary"
                 size="lg"
-                onClick={onOpenContact}
+                onClick={() => {
+                  const el = document.getElementById('case-studies');
+                  if (el) el.scrollIntoView({ behavior: 'smooth' });
+                }}
                 icon={ArrowUpRight}
                 className="group px-6 py-3.5 font-heading font-semibold"
               >
@@ -109,28 +109,23 @@ export default function Hero({ onOpenContact }) {
               </CustomButton>
             </div>
 
-            {/* Authentic Enterprise Capability Indicators */}
+            {/* 3 Clear Trust Badges */}
             <div 
-              className={`pt-6 border-t border-slate-200/90 grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 transform-gpu transition-all duration-500 ease-out delay-400 ${
+              className={`pt-6 border-t border-slate-200/90 grid grid-cols-1 sm:grid-cols-3 gap-4 transform-gpu transition-all duration-500 ease-out delay-400 ${
                 isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
               }`}
             >
-              <div>
-                <div className="font-heading text-2xl sm:text-3xl font-extrabold tracking-tight text-petrol-900">100%</div>
-                <div className="font-sans text-xs font-semibold text-slate-600 mt-1">Client Code Ownership</div>
-              </div>
-              <div>
-                <div className="font-heading text-2xl sm:text-3xl font-extrabold tracking-tight text-petrol-900">Direct</div>
-                <div className="font-sans text-xs font-semibold text-slate-600 mt-1">Senior Dev Access</div>
-              </div>
-              <div>
-                <div className="font-heading text-2xl sm:text-3xl font-extrabold tracking-tight text-brand-600">Modern</div>
-                <div className="font-sans text-xs font-semibold text-slate-600 mt-1">React, Node &amp; SQL</div>
-              </div>
-              <div>
-                <div className="font-heading text-2xl sm:text-3xl font-extrabold tracking-tight text-petrol-900">2-Week</div>
-                <div className="font-sans text-xs font-semibold text-slate-600 mt-1">Sprint Demos</div>
-              </div>
+              {siteData.hero.trustBadges.map((badge) => (
+                <div key={badge.title} className="p-3.5 rounded-xl bg-white border border-slate-200 shadow-2xs">
+                  <div className="flex items-center gap-1.5 text-slate-900 font-heading font-bold text-xs sm:text-sm">
+                    <CheckCircle2 className="w-4 h-4 text-brand-600 flex-shrink-0" />
+                    <span>{badge.title}</span>
+                  </div>
+                  <p className="font-sans text-[11px] text-slate-500 mt-1 leading-snug">
+                    {badge.desc}
+                  </p>
+                </div>
+              ))}
             </div>
 
           </div>

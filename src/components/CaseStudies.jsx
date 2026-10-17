@@ -21,16 +21,16 @@ export default function CaseStudies({ onOpenContact }) {
             <div className="lg:col-span-7 space-y-3">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-brand-800 font-sans text-xs font-semibold tracking-wider uppercase">
                 <span className="w-1.5 h-1.5 rounded-full bg-brand-600"></span>
-                Production Deployments
+                Real-World Projects
               </div>
               <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
-                FEATURED CLIENT <br className="hidden sm:inline" />
-                <span className="text-brand-600">CASE STUDIES &amp; SYSTEMS.</span>
+                REAL PROJECTS. <br className="hidden sm:inline" />
+                <span className="text-brand-600">REAL BUSINESS RESULTS.</span>
               </h2>
             </div>
             <div className="lg:col-span-5">
               <p className="font-sans text-slate-600 text-sm sm:text-base leading-relaxed">
-                Explore real software architectures engineered by Clarivens to eliminate manual spreadsheet chaos, automate multi-tier approvals, and unify operational telemetry.
+                See how we have helped institutions and businesses eliminate paperwork, save hours of manual spreadsheet work, and run their day-to-day operations more smoothly.
               </p>
             </div>
           </div>
@@ -80,7 +80,7 @@ export default function CaseStudies({ onOpenContact }) {
             <div className="p-6 sm:p-8 lg:p-10">
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
                 
-                {/* Left 7 Columns: Challenge & Architecture */}
+                {/* Left 7 Columns: Challenge & Solution */}
                 <div className="lg:col-span-7 space-y-6">
                   <div>
                     <h3 className="font-heading text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900 leading-tight">
@@ -94,17 +94,17 @@ export default function CaseStudies({ onOpenContact }) {
                   {/* Challenge Box */}
                   <div className="p-4 rounded-2xl bg-amber-50/50 border border-amber-200/80">
                     <div className="font-sans text-xs font-bold uppercase tracking-wider text-amber-900 mb-1">
-                      The Operational Challenge
+                      The Problem They Faced
                     </div>
                     <p className="font-sans text-xs text-amber-950 leading-relaxed">
                       {activeCase.challenge}
                     </p>
                   </div>
 
-                  {/* Delivered Architecture Specs */}
+                  {/* What We Built */}
                   <div>
                     <div className="font-sans text-xs font-bold uppercase tracking-wider text-slate-500 mb-3">
-                      Delivered System Capabilities
+                      What We Built &amp; Delivered
                     </div>
                     <div className="space-y-2.5">
                       {activeCase.architecture.map((item, i) => (
@@ -112,21 +112,6 @@ export default function CaseStudies({ onOpenContact }) {
                           <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5" />
                           <span className="font-sans leading-relaxed font-medium">{item}</span>
                         </div>
-                      ))}
-                    </div>
-                  </div>
-
-                  {/* Tech Stack */}
-                  <div className="pt-2 font-sans">
-                    <span className="text-xs font-semibold text-slate-400 block mb-2 uppercase tracking-wider">Technology Stack:</span>
-                    <div className="flex flex-wrap gap-1.5">
-                      {activeCase.techStack.map((tech) => (
-                        <span 
-                          key={tech}
-                          className="px-2.5 py-1 rounded-md bg-slate-100 text-slate-700 text-xs font-semibold"
-                        >
-                          {tech}
-                        </span>
                       ))}
                     </div>
                   </div>
@@ -140,7 +125,7 @@ export default function CaseStudies({ onOpenContact }) {
                       icon={ArrowRight}
                       className="px-6 py-3 font-heading font-semibold"
                     >
-                      Request Architecture Scope
+                      Ask About a Similar Solution
                     </CustomButton>
                   </div>
                 </div>
@@ -151,7 +136,7 @@ export default function CaseStudies({ onOpenContact }) {
                   {/* Metric Cards Grid */}
                   <div className="space-y-3 font-sans">
                     <div className="text-xs font-bold uppercase tracking-wider text-slate-500">
-                      Measurable Business Impact
+                      Measurable Results
                     </div>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -175,13 +160,13 @@ export default function CaseStudies({ onOpenContact }) {
                   <div className="p-5 rounded-2xl bg-emerald-50/50 border border-emerald-200/80 space-y-3 font-sans">
                     <div className="flex items-center gap-2 text-xs font-bold text-emerald-900">
                       <ShieldCheck className="w-4 h-4 text-emerald-600" />
-                      <span className="font-heading font-bold">100% Client Intellectual Property</span>
+                      <span className="font-heading font-bold">Full Ownership &amp; Friendly Support</span>
                     </div>
                     <p className="font-sans text-xs text-slate-600 leading-relaxed">
-                      Every production application engineered by Clarivens includes complete repository handover, deployment automation scripts, and zero ongoing vendor license lock-in.
+                      You own your software and business data completely. We provide full setup, comprehensive staff training, and dependable ongoing support whenever you need assistance.
                     </p>
                     <div className="pt-1 text-[11px] font-semibold text-brand-700 uppercase tracking-wider">
-                      Tested Source Code • PostgreSQL Schemas • CI/CD Pipelines
+                      Complete Software Ownership • Staff Training • Ongoing Support
                     </div>
                   </div>
 

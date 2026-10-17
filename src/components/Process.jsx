@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Search, Layout, Code2, Rocket, CheckCircle2, ShieldCheck } from 'lucide-react';
+import { MessageSquare, Laptop, CheckCircle2, ShieldCheck, HeartHandshake } from 'lucide-react';
 import { siteData } from '../data/siteData';
 import ScrollReveal from './common/ScrollReveal';
 
 export default function Process() {
   const [selectedPhase, setSelectedPhase] = useState(0);
-  const phaseIcons = [Search, Layout, Code2, Rocket];
+  const phaseIcons = [MessageSquare, Laptop, HeartHandshake];
 
   return (
     <section 
@@ -24,8 +24,8 @@ export default function Process() {
                 {siteData.process.eyebrow}
               </div>
               <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-[1.1]">
-                A STRUCTURED ROADMAP FROM <br className="hidden sm:inline" />
-                <span className="text-brand-400">SCOPING TO HANDOVER.</span>
+                A SIMPLE, TRANSPARENT <br className="hidden sm:inline" />
+                <span className="text-brand-400">3-STEP PROCESS.</span>
               </h2>
             </div>
             <div className="lg:col-span-5">
@@ -36,9 +36,9 @@ export default function Process() {
           </div>
         </ScrollReveal>
 
-        {/* 4-Step Interactive Engagement Grid */}
+        {/* 3-Step Interactive Process Grid */}
         <ScrollReveal direction="up" delay={150}>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 mb-10">
             {siteData.process.phases.map((phase, idx) => {
               const Icon = phaseIcons[idx];
               const isSelected = selectedPhase === idx;
@@ -47,7 +47,7 @@ export default function Process() {
                 <div
                   key={phase.title}
                   onClick={() => setSelectedPhase(idx)}
-                  className={`cursor-pointer rounded-2xl p-6 border transition-all text-left flex flex-col justify-between ${
+                  className={`cursor-pointer rounded-2xl p-7 border transition-all text-left flex flex-col justify-between ${
                     isSelected
                       ? 'bg-petrol-800 border-brand-400 shadow-xl ring-1 ring-brand-400/40 translate-y-[-2px]'
                       : 'bg-petrol-950/70 border-petrol-800/80 hover:bg-petrol-800/40 hover:border-petrol-700'
@@ -56,27 +56,27 @@ export default function Process() {
                   <div>
                     <div className="flex items-center justify-between mb-4">
                       <span className="font-sans text-xs font-bold text-brand-400 uppercase tracking-wider">
-                        Phase {phase.step}
+                        Step {phase.step}
                       </span>
-                      <div className={`w-8 h-8 rounded-lg flex items-center justify-center ${
-                        isSelected ? 'bg-brand-500 text-petrol-950' : 'bg-petrol-900 text-brand-300'
+                      <div className={`w-9 h-9 rounded-xl flex items-center justify-center ${
+                        isSelected ? 'bg-brand-500 text-petrol-950 font-bold' : 'bg-petrol-900 text-brand-300'
                       }`}>
                         <Icon className="w-4 h-4" />
                       </div>
                     </div>
 
-                    <h3 className="font-heading text-lg sm:text-xl font-bold tracking-tight text-white mb-2">
+                    <h3 className="font-heading text-xl font-bold tracking-tight text-white mb-2">
                       {phase.title}
                     </h3>
 
-                    <p className="font-sans text-xs text-slate-300 leading-relaxed mb-6">
+                    <p className="font-sans text-xs sm:text-sm text-slate-300 leading-relaxed mb-6">
                       {phase.summary}
                     </p>
                   </div>
 
                   <div className="pt-4 border-t border-petrol-800 space-y-2">
                     <div className="font-sans text-[11px] font-semibold text-slate-400 uppercase tracking-wider">
-                      Key Deliverables:
+                      What you get:
                     </div>
                     {phase.deliverables.map((d) => (
                       <div key={d} className="flex items-center gap-2 text-xs text-brand-200 font-sans">
@@ -99,11 +99,11 @@ export default function Process() {
                 <ShieldCheck className="w-4 h-4" />
               </div>
               <div>
-                <span className="font-heading font-bold text-white block">Strict Code Sovereignty Guarantee</span>
-                <span className="text-slate-300 font-sans">Bi-weekly sprint reviews, complete IP transfer, and documented deployment upon completion.</span>
+                <span className="font-heading font-bold text-white block">Complete Software Ownership</span>
+                <span className="text-slate-300 font-sans">You own 100% of your software and data upon project delivery. No recurring vendor lock-in.</span>
               </div>
             </div>
-            <span className="text-brand-300 font-bold whitespace-nowrap uppercase tracking-wider">100% Client Intellectual Property</span>
+            <span className="text-brand-300 font-bold whitespace-nowrap uppercase tracking-wider">Plain-English Communication • Direct Support</span>
           </div>
         </ScrollReveal>
 

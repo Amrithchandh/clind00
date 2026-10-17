@@ -1,10 +1,10 @@
 import React from 'react';
-import { Building2, Car, Truck, CheckCircle2, ArrowRight } from 'lucide-react';
+import { GraduationCap, Wrench, Truck, Briefcase, CheckCircle2, ArrowRight } from 'lucide-react';
 import { siteData } from '../data/siteData';
 import ScrollReveal from './common/ScrollReveal';
 
 export default function PrioritySectors({ onOpenContact }) {
-  const sectorIcons = [Building2, Car, Truck];
+  const sectorIcons = [GraduationCap, Wrench, Truck, Briefcase];
 
   return (
     <section 
@@ -21,8 +21,8 @@ export default function PrioritySectors({ onOpenContact }) {
                 {siteData.prioritySectors.eyebrow}
               </div>
               <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 leading-[1.1]">
-                TAILORED SOLUTIONS FOR <br className="hidden sm:inline" />
-                <span className="text-brand-600">OPERATIONALLY INTENSIVE SECTORS.</span>
+                PRACTICAL SOLUTIONS FOR <br className="hidden sm:inline" />
+                <span className="text-brand-600">GROWING ORGANIZATIONS.</span>
               </h2>
             </div>
             <div className="lg:col-span-5">
@@ -33,13 +33,13 @@ export default function PrioritySectors({ onOpenContact }) {
           </div>
         </ScrollReveal>
 
-        {/* Priority Sectors Grid: 3 Clean Architectural Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
+        {/* Priority Sectors Grid: 4 Industry Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           {siteData.prioritySectors.sectors.map((sector, idx) => {
             const Icon = sectorIcons[idx % sectorIcons.length];
 
             return (
-              <ScrollReveal key={sector.id} direction="up" delay={idx * 80} className="h-full">
+              <ScrollReveal key={sector.id} direction="up" delay={idx * 60} className="h-full">
                 <div className="bg-white rounded-2xl border border-slate-200/90 shadow-xs p-6 sm:p-7 flex flex-col justify-between text-left h-full hover:shadow-md transition-shadow">
                   <div>
                     <div className="flex items-center justify-between mb-4">
@@ -47,7 +47,7 @@ export default function PrioritySectors({ onOpenContact }) {
                         <Icon className="w-5 h-5" />
                       </div>
                       <span className="font-sans text-[11px] font-bold uppercase tracking-wider text-slate-400">
-                        Sector 0{idx + 1}
+                        Solution 0{idx + 1}
                       </span>
                     </div>
 
@@ -58,7 +58,7 @@ export default function PrioritySectors({ onOpenContact }) {
                       {sector.subtitle}
                     </p>
 
-                    {/* Core Capabilities */}
+                    {/* Core Practical Capabilities */}
                     <div className="space-y-3 pt-3 border-t border-slate-100 mb-6">
                       {sector.capabilities.map((cap) => (
                         <div key={cap.title} className="text-xs">
@@ -92,7 +92,7 @@ export default function PrioritySectors({ onOpenContact }) {
                       onClick={() => onOpenContact(sector.title)}
                       className="inline-flex items-center gap-1.5 font-sans text-xs font-bold text-brand-700 hover:text-brand-900 transition-colors"
                     >
-                      <span>Discuss sector requirements</span>
+                      <span>Discuss a solution for this field</span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </button>
                   </div>
