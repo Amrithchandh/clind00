@@ -10,7 +10,7 @@ export default function Services({ onOpenContact }) {
   return (
     <section 
       id="services" 
-      className="py-14 sm:py-16 lg:py-20 bg-white border-b border-slate-200/80 relative overflow-hidden"
+      className="py-14 sm:py-16 lg:py-20 bg-white border-b border-slate-200/80 relative overflow-hidden font-sans"
     >
       <div className="site-container">
         
@@ -18,7 +18,7 @@ export default function Services({ onOpenContact }) {
           
           {/* Left Column: Fixed / Sticky Information */}
           <ScrollReveal direction="up" delay={0} className="lg:col-span-5 text-left space-y-6">
-            <div className="text-xs font-bold tracking-wider text-brand-700 uppercase">
+            <div className="font-sans text-xs font-semibold tracking-wider text-brand-700 uppercase">
               {siteData.services.eyebrow}
             </div>
 
@@ -27,7 +27,7 @@ export default function Services({ onOpenContact }) {
               <span className="text-brand-600">SOFTWARE ENGINEERING.</span>
             </h2>
 
-            <p className="text-slate-600 text-base leading-relaxed">
+            <p className="font-sans text-slate-600 text-base leading-relaxed">
               {siteData.services.description}
             </p>
 
@@ -35,12 +35,12 @@ export default function Services({ onOpenContact }) {
               <div className="font-heading text-xs font-bold uppercase tracking-wider text-petrol-900">
                 Core Engineering Standard
               </div>
-              <p className="text-xs text-slate-600 leading-relaxed">
+              <p className="font-sans text-xs text-slate-600 leading-relaxed">
                 Every service is backed by disciplined engineering principles: predictable architectures, strict security standards, comprehensive documentation, and zero vendor lock-in.
               </p>
               <button
                 onClick={() => onOpenContact()}
-                className="inline-flex items-center gap-2 text-xs font-bold text-brand-700 hover:text-brand-900 group"
+                className="inline-flex items-center gap-2 font-sans text-xs font-bold text-brand-700 hover:text-brand-900 group"
               >
                 <span>Request Scope Evaluation</span>
                 <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
@@ -68,7 +68,7 @@ export default function Services({ onOpenContact }) {
                       }`}>
                         <IconComponent className="w-4 h-4" />
                       </div>
-                      <h3 className={`font-display text-lg sm:text-xl font-bold transition-colors ${
+                      <h3 className={`font-heading text-lg sm:text-xl font-bold tracking-tight transition-colors ${
                         isExpanded ? 'text-brand-600' : 'text-slate-900 group-hover:text-petrol-800'
                       }`}>
                         {service.title}
@@ -89,13 +89,13 @@ export default function Services({ onOpenContact }) {
                   {/* Expandable Details Container */}
                   {isExpanded && (
                     <div className="mt-4 pt-4 border-t border-slate-100 text-left space-y-4 animate-in fade-in duration-150">
-                      <p className="text-sm text-slate-600 leading-relaxed">
+                      <p className="font-sans text-sm text-slate-600 leading-relaxed">
                         {service.desc}
                       </p>
 
                       <div className="flex flex-wrap items-center justify-between gap-4 pt-2">
-                        <div className="flex flex-wrap items-center gap-1.5">
-                          <span className="text-xs font-semibold text-slate-400 mr-1">Technologies:</span>
+                        <div className="flex flex-wrap items-center gap-1.5 font-sans">
+                          <span className="text-xs font-semibold text-slate-400 mr-1 uppercase tracking-wider">Technologies:</span>
                           {service.tech.map((t) => (
                             <span 
                               key={t}
@@ -111,7 +111,7 @@ export default function Services({ onOpenContact }) {
                             e.stopPropagation();
                             onOpenContact(service.title);
                           }}
-                          className="inline-flex items-center gap-1.5 text-xs font-bold text-petrol-900 hover:text-brand-600"
+                          className="inline-flex items-center gap-1.5 font-sans text-xs font-bold text-petrol-900 hover:text-brand-600"
                         >
                           <span>Inquire regarding this capability</span>
                           <ArrowUpRight className="w-3.5 h-3.5" />

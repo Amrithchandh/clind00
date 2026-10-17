@@ -79,7 +79,7 @@ export default function CustomSelect({
   };
 
   return (
-    <div ref={containerRef} className={`relative w-full ${className}`}>
+    <div ref={containerRef} className={`relative w-full font-sans ${className}`}>
       {/* Trigger Button */}
       <button
         type="button"
@@ -88,13 +88,13 @@ export default function CustomSelect({
         onKeyDown={handleKeyDown}
         aria-haspopup="listbox"
         aria-expanded={isOpen}
-        className={`w-full flex items-center justify-between text-left bg-white border transition-all duration-150 ${sizeClasses[size]} ${
+        className={`w-full flex items-center justify-between text-left bg-white border transition-all duration-150 font-sans ${sizeClasses[size]} ${
           isOpen
             ? 'border-brand-500 ring-2 ring-brand-500/20 shadow-sm'
             : 'border-slate-300 hover:border-slate-400 focus:border-brand-500 focus:ring-2 focus:ring-brand-500/20'
         } ${disabled ? 'opacity-50 cursor-not-allowed bg-slate-50' : 'cursor-pointer'}`}
       >
-        <span className={`truncate ${selectedOption ? 'text-slate-900 font-medium' : 'text-slate-400'}`}>
+        <span className={`truncate font-sans ${selectedOption ? 'text-slate-900 font-medium' : 'text-slate-400'}`}>
           {selectedOption ? selectedOption.label : placeholder}
         </span>
         <ChevronDown
@@ -108,7 +108,7 @@ export default function CustomSelect({
       {isOpen && (
         <div 
           role="listbox"
-          className="absolute z-50 left-0 right-0 mt-1.5 bg-white border border-slate-200/90 rounded-xl shadow-xl overflow-hidden py-1.5 animate-in fade-in zoom-in-95 duration-150 max-h-60 overflow-y-auto"
+          className="absolute z-50 left-0 right-0 mt-1.5 bg-white border border-slate-200/90 rounded-xl shadow-xl overflow-hidden py-1.5 animate-in fade-in zoom-in-95 duration-150 max-h-60 overflow-y-auto font-sans"
         >
           {formattedOptions.map((opt) => {
             const isSelected = opt.value === value;
@@ -121,7 +121,7 @@ export default function CustomSelect({
                   onChange(opt.value);
                   setIsOpen(false);
                 }}
-                className={`px-3.5 py-2 text-xs flex items-center justify-between cursor-pointer transition-colors ${
+                className={`px-3.5 py-2 text-xs flex items-center justify-between cursor-pointer transition-colors font-sans ${
                   isSelected
                     ? 'bg-brand-50 text-brand-800 font-semibold'
                     : 'text-slate-700 hover:bg-slate-50 hover:text-slate-900'

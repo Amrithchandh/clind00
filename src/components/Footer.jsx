@@ -23,7 +23,7 @@ export default function Footer({ onOpenContact }) {
   };
 
   return (
-    <footer className="bg-[#0c1a1d] text-white border-t border-petrol-900 relative overflow-hidden">
+    <footer className="bg-[#0c1a1d] text-white border-t border-petrol-900 relative overflow-hidden font-sans">
       {/* Background Architectural Grid */}
       <div className="absolute inset-0 bg-tech-grid-dark opacity-15 pointer-events-none"></div>
 
@@ -47,14 +47,14 @@ export default function Footer({ onOpenContact }) {
               </div>
             </div>
 
-            <p className="text-slate-400 text-sm max-w-md leading-relaxed">
+            <p className="font-sans text-slate-400 text-sm max-w-md leading-relaxed">
               {siteData.brand.mission}
             </p>
           </div>
 
           <div className="md:col-span-6 flex flex-col sm:flex-row sm:items-center sm:justify-end gap-4 text-left sm:text-right">
             <div>
-              <div className="font-display text-xs font-bold text-slate-400 uppercase tracking-wider">
+              <div className="font-heading text-xs font-bold text-slate-400 uppercase tracking-wider">
                 Engineering Delivery
               </div>
               <div className="text-sm font-sans text-slate-200 mt-0.5">
@@ -76,10 +76,10 @@ export default function Footer({ onOpenContact }) {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-12 border-b border-petrol-800/80 text-left">
           
           <div>
-            <div className="font-display text-xs font-bold tracking-wider text-brand-400 uppercase mb-4">
+            <div className="font-heading text-xs font-bold tracking-wider text-brand-400 uppercase mb-4">
               Navigation
             </div>
-            <ul className="space-y-2.5 text-xs text-slate-400 font-medium">
+            <ul className="space-y-2.5 text-xs text-slate-400 font-medium font-sans">
               {siteData.navLinks.map((link) => (
                 <li key={link.label}>
                   <a href={link.href} className="hover:text-white transition-colors">
@@ -91,10 +91,10 @@ export default function Footer({ onOpenContact }) {
           </div>
 
           <div>
-            <div className="font-display text-xs font-bold tracking-wider text-brand-400 uppercase mb-4">
+            <div className="font-heading text-xs font-bold tracking-wider text-brand-400 uppercase mb-4">
               Solutions &amp; Case Studies
             </div>
-            <ul className="space-y-2.5 text-xs text-slate-400 font-medium">
+            <ul className="space-y-2.5 text-xs text-slate-400 font-medium font-sans">
               <li>
                 <a href="#case-studies" className="hover:text-white transition-colors">
                   Workforce &amp; Attendance Suite
@@ -119,10 +119,10 @@ export default function Footer({ onOpenContact }) {
           </div>
 
           <div>
-            <div className="font-display text-xs font-bold tracking-wider text-brand-400 uppercase mb-4">
+            <div className="font-heading text-xs font-bold tracking-wider text-brand-400 uppercase mb-4">
               Capabilities
             </div>
-            <ul className="space-y-2.5 text-xs text-slate-400 font-medium">
+            <ul className="space-y-2.5 text-xs text-slate-400 font-medium font-sans">
               <li>
                 <a href="#services" className="hover:text-white transition-colors">
                   Custom Web Applications
@@ -147,10 +147,10 @@ export default function Footer({ onOpenContact }) {
           </div>
 
           <div>
-            <div className="font-display text-xs font-bold tracking-wider text-brand-400 uppercase mb-4">
+            <div className="font-heading text-xs font-bold tracking-wider text-brand-400 uppercase mb-4">
               Connect
             </div>
-            <ul className="space-y-2.5 text-xs text-slate-400 font-medium">
+            <ul className="space-y-2.5 text-xs text-slate-400 font-medium font-sans">
               <li>
                 <a 
                   href={siteData.brand.linkedin} 
@@ -189,7 +189,7 @@ export default function Footer({ onOpenContact }) {
         </div>
 
         {/* Lower Footer: Copyright & Metadata */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 font-medium">
+        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 font-medium font-sans">
           <div>
             © 2026 {siteData.brand.name} {siteData.brand.subtitle}. All rights reserved.
           </div>

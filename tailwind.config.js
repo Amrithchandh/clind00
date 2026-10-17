@@ -42,9 +42,9 @@ export default {
         }
       },
       fontFamily: {
-        sans: ['"Satoshi"', '"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
-        heading: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
-        display: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+        sans: ['"Satoshi"', 'sans-serif'],
+        heading: ['"Cabinet Grotesk"', 'sans-serif'],
+        display: ['"Cabinet Grotesk"', 'sans-serif'],
       },
       letterSpacing: {
         tighter: '-0.04em',

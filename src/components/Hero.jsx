@@ -50,7 +50,7 @@ export default function Hero({ onOpenContact }) {
                 isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2'
               }`}
             >
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-brand-800 text-xs font-semibold tracking-wide uppercase">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-brand-800 font-sans text-xs font-semibold tracking-wider uppercase">
                 <span className="w-1.5 h-1.5 rounded-full bg-brand-600"></span>
                 {siteData.hero.eyebrow}
               </div>
@@ -72,7 +72,7 @@ export default function Hero({ onOpenContact }) {
 
             {/* Supporting Copy */}
             <p 
-              className={`text-base sm:text-lg text-slate-600 font-normal leading-relaxed max-w-2xl transform-gpu transition-all duration-500 ease-out delay-200 ${
+              className={`font-sans text-base sm:text-lg text-slate-600 font-normal leading-relaxed max-w-2xl transform-gpu transition-all duration-500 ease-out delay-200 ${
                 isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'
               }`}
             >
@@ -116,20 +116,20 @@ export default function Hero({ onOpenContact }) {
               }`}
             >
               <div>
-                <div className="font-heading text-2xl sm:text-3xl font-extrabold text-petrol-900">100%</div>
-                <div className="text-xs font-semibold text-slate-600 mt-1">Client Code Ownership</div>
+                <div className="font-heading text-2xl sm:text-3xl font-extrabold tracking-tight text-petrol-900">100%</div>
+                <div className="font-sans text-xs font-semibold text-slate-600 mt-1">Client Code Ownership</div>
               </div>
               <div>
-                <div className="font-heading text-2xl sm:text-3xl font-extrabold text-petrol-900">Direct</div>
-                <div className="text-xs font-semibold text-slate-600 mt-1">Senior Dev Access</div>
+                <div className="font-heading text-2xl sm:text-3xl font-extrabold tracking-tight text-petrol-900">Direct</div>
+                <div className="font-sans text-xs font-semibold text-slate-600 mt-1">Senior Dev Access</div>
               </div>
               <div>
-                <div className="font-heading text-2xl sm:text-3xl font-extrabold text-brand-600">Modern</div>
-                <div className="text-xs font-semibold text-slate-600 mt-1">React, Node &amp; SQL</div>
+                <div className="font-heading text-2xl sm:text-3xl font-extrabold tracking-tight text-brand-600">Modern</div>
+                <div className="font-sans text-xs font-semibold text-slate-600 mt-1">React, Node &amp; SQL</div>
               </div>
               <div>
-                <div className="font-heading text-2xl sm:text-3xl font-extrabold text-petrol-900">2-Week</div>
-                <div className="text-xs font-semibold text-slate-600 mt-1">Sprint Demos</div>
+                <div className="font-heading text-2xl sm:text-3xl font-extrabold tracking-tight text-petrol-900">2-Week</div>
+                <div className="font-sans text-xs font-semibold text-slate-600 mt-1">Sprint Demos</div>
               </div>
             </div>
 

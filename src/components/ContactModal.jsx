@@ -44,7 +44,6 @@ export default function ContactModal({ isOpen, onClose, preselectedService }) {
     };
   }, []);
 
-  // Sync preselectedService when prop changes without cascading effect renders
   const [prevServiceProp, setPrevServiceProp] = useState(preselectedService);
   if (preselectedService && preselectedService !== prevServiceProp) {
     setPrevServiceProp(preselectedService);
@@ -106,7 +105,7 @@ export default function ContactModal({ isOpen, onClose, preselectedService }) {
       maxWidth="max-w-lg"
     >
       {submitted ? (
-        <div className="py-4 space-y-5 animate-in fade-in duration-200">
+        <div className="py-4 space-y-5 animate-in fade-in duration-200 font-sans">
           <CustomAlert
             type="success"
             title="Consultation Request Confirmed"
@@ -115,7 +114,7 @@ export default function ContactModal({ isOpen, onClose, preselectedService }) {
             We have received your technical inquiry regarding <strong className="font-semibold text-emerald-950">{formData.service}</strong>. An engineering partner will reply to <strong className="font-semibold text-emerald-950">{formData.email}</strong> within 24 business hours.
           </CustomAlert>
 
-          <div className="bg-slate-50 p-5 rounded-2xl border border-slate-200 text-left space-y-2 text-xs">
+          <div className="bg-slate-50 p-5 rounded-2xl border border-slate-200 text-left space-y-2 text-xs font-sans">
             <span className="text-xs uppercase tracking-wider text-slate-500 font-bold block mb-1">
               Confirmed Session Parameters
             </span>
@@ -151,9 +150,9 @@ export default function ContactModal({ isOpen, onClose, preselectedService }) {
           </div>
         </div>
       ) : (
-        <form onSubmit={handleSubmit} className="space-y-4 text-left">
+        <form onSubmit={handleSubmit} className="space-y-4 text-left font-sans">
           <div>
-            <label className="block text-xs font-semibold text-slate-700 uppercase mb-1">
+            <label className="block font-sans text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">
               Your Name *
             </label>
             <input
@@ -162,13 +161,13 @@ export default function ContactModal({ isOpen, onClose, preselectedService }) {
               placeholder="Jane Doe"
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              className="w-full px-3.5 py-2.5 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:outline-none font-medium"
+              className="w-full px-3.5 py-2.5 text-xs rounded-lg border border-slate-300 font-sans focus:ring-2 focus:ring-brand-500 focus:outline-none font-medium"
             />
           </div>
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label className="block text-xs font-semibold text-slate-700 uppercase mb-1">
+              <label className="block font-sans text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">
                 Work Email *
               </label>
               <input
@@ -177,11 +176,11 @@ export default function ContactModal({ isOpen, onClose, preselectedService }) {
                 placeholder="jane@company.com"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="w-full px-3.5 py-2.5 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:outline-none font-medium"
+                className="w-full px-3.5 py-2.5 text-xs rounded-lg border border-slate-300 font-sans focus:ring-2 focus:ring-brand-500 focus:outline-none font-medium"
               />
             </div>
             <div>
-              <label className="block text-xs font-semibold text-slate-700 uppercase mb-1">
+              <label className="block font-sans text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">
                 Organization
               </label>
               <input
@@ -189,14 +188,14 @@ export default function ContactModal({ isOpen, onClose, preselectedService }) {
                 placeholder="Company / Institution"
                 value={formData.company}
                 onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                className="w-full px-3.5 py-2.5 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:outline-none font-medium"
+                className="w-full px-3.5 py-2.5 text-xs rounded-lg border border-slate-300 font-sans focus:ring-2 focus:ring-brand-500 focus:outline-none font-medium"
               />
             </div>
           </div>
 
           <div className="grid grid-cols-2 gap-3">
             <div>
-              <label className="block text-xs font-semibold text-slate-700 uppercase mb-1">
+              <label className="block font-sans text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">
                 Capability Area
               </label>
               <CustomSelect
@@ -208,7 +207,7 @@ export default function ContactModal({ isOpen, onClose, preselectedService }) {
               />
             </div>
             <div>
-              <label className="block text-xs font-semibold text-slate-700 uppercase mb-1">
+              <label className="block font-sans text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">
                 Target Timeline
               </label>
               <CustomSelect
@@ -222,7 +221,7 @@ export default function ContactModal({ isOpen, onClose, preselectedService }) {
           </div>
 
           <div>
-            <label className="block text-xs font-semibold text-slate-700 uppercase mb-1">
+            <label className="block font-sans text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">
               Describe your project or systems requirements
             </label>
             <textarea
@@ -230,7 +229,7 @@ export default function ContactModal({ isOpen, onClose, preselectedService }) {
               placeholder="Describe your project scope, integration needs, or custom internal tool requirements..."
               value={formData.notes}
               onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-              className="w-full px-3.5 py-2.5 text-xs rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:outline-none font-medium"
+              className="w-full px-3.5 py-2.5 text-xs rounded-lg border border-slate-300 font-sans focus:ring-2 focus:ring-brand-500 focus:outline-none font-medium"
             ></textarea>
           </div>
 

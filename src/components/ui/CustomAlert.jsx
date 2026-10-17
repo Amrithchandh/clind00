@@ -45,17 +45,17 @@ export default function CustomAlert({
   return (
     <div
       role="alert"
-      className={`rounded-xl border p-4 shadow-sm flex items-start gap-3 transition-all duration-200 ${currentStyle.wrapper} ${className}`}
+      className={`rounded-xl border p-4 shadow-sm flex items-start gap-3 transition-all duration-200 font-sans ${currentStyle.wrapper} ${className}`}
     >
       <Icon className={`w-5 h-5 flex-shrink-0 mt-0.5 ${currentStyle.iconColor}`} />
       
       <div className="flex-1 text-left">
         {title && (
-          <h4 className={`text-xs font-bold font-display tracking-wide uppercase mb-1 ${currentStyle.titleColor}`}>
+          <h4 className={`text-xs font-bold font-heading tracking-wide uppercase mb-1 ${currentStyle.titleColor}`}>
             {title}
           </h4>
         )}
-        <div className="text-xs leading-relaxed opacity-90">
+        <div className="font-sans text-xs leading-relaxed opacity-90">
           {children}
         </div>
       </div>

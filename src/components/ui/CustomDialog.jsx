@@ -39,7 +39,7 @@ export default function CustomDialog({
 
   return (
     <div 
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 overflow-y-auto"
+      className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 overflow-y-auto font-sans"
       role="dialog"
       aria-modal="true"
       aria-labelledby="dialog-title"
@@ -60,12 +60,12 @@ export default function CustomDialog({
         <div className="px-6 sm:px-8 pt-5 pb-4 border-b border-slate-100 flex items-start justify-between bg-slate-50/60 rounded-t-3xl">
           <div>
             {title && (
-              <h3 id="dialog-title" className="font-display text-xl font-bold text-slate-900">
+              <h3 id="dialog-title" className="font-heading text-xl font-bold tracking-tight text-slate-900">
                 {title}
               </h3>
             )}
             {subtitle && (
-              <p className="text-xs text-slate-500 mt-1">
+              <p className="font-sans text-xs text-slate-500 mt-1 leading-relaxed">
                 {subtitle}
               </p>
             )}
@@ -82,7 +82,7 @@ export default function CustomDialog({
         </div>
 
         {/* Dialog Content */}
-        <div className="p-6 sm:p-8">
+        <div className="p-6 sm:p-8 font-sans">
           {children}
         </div>
       </div>
