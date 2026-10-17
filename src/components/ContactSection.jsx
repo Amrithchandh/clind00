@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ArrowUpRight, Mail, MapPin } from 'lucide-react';
+import { ArrowUpRight, Mail, Phone, MapPin } from 'lucide-react';
 import { siteData } from '../data/siteData';
 import ScrollReveal from './common/ScrollReveal';
 import CustomSelect from './ui/CustomSelect';
@@ -117,6 +117,12 @@ export default function ContactSection() {
                   <Mail className="w-4 h-4 text-brand-400" />
                   <a href={`mailto:${siteData.brand.email}`} className="hover:text-white transition-colors">
                     {siteData.brand.email}
+                  </a>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Phone className="w-4 h-4 text-brand-400" />
+                  <a href={`tel:${siteData.brand.phoneRaw}`} className="hover:text-white transition-colors">
+                    {siteData.brand.phone}
                   </a>
                 </div>
                 <div className="flex items-center gap-3">

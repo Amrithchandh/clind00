@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUp, ArrowUpRight } from 'lucide-react';
+import { ArrowUp, ArrowUpRight, Mail, Phone } from 'lucide-react';
 import { siteData } from '../data/siteData';
 import { LogoMark } from './Navbar';
 
@@ -153,6 +153,24 @@ export default function Footer({ onOpenContact }) {
             <ul className="space-y-2.5 text-xs text-slate-400 font-medium font-sans">
               <li>
                 <a 
+                  href={`mailto:${siteData.brand.email}`} 
+                  className="inline-flex items-center gap-1.5 hover:text-white transition-colors"
+                >
+                  <Mail className="w-3.5 h-3.5 text-brand-400" />
+                  <span>{siteData.brand.email}</span>
+                </a>
+              </li>
+              <li>
+                <a 
+                  href={`tel:${siteData.brand.phoneRaw}`} 
+                  className="inline-flex items-center gap-1.5 hover:text-white transition-colors"
+                >
+                  <Phone className="w-3.5 h-3.5 text-brand-400" />
+                  <span>{siteData.brand.phone}</span>
+                </a>
+              </li>
+              <li>
+                <a 
                   href={siteData.brand.linkedin} 
                   target="_blank" 
                   rel="noreferrer" 
@@ -180,7 +198,7 @@ export default function Footer({ onOpenContact }) {
                   onClick={onOpenContact} 
                   className="inline-flex items-center gap-1.5 hover:text-brand-300 transition-colors text-left"
                 >
-                  <span>Inquire via Email ↗</span>
+                  <span>Book Consultation ↗</span>
                 </button>
               </li>
             </ul>
